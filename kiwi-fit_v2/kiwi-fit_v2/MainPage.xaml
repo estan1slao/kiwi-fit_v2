@@ -5,15 +5,10 @@
 
     <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
         <Image x:Name="loadingPicture"/>
-        <RelativeLayout>
-            <Button Text = "Начать" FontSize="25" FontFamily="Ubuntu" TextColor="#3F3F3F" 
-                    CornerRadius="11" BackgroundColor="#68ED76" Clicked="OnButtonClicked"
-             RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
-                Property=Width, Factor=0.5, Constant=-138}" 
-             RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
-                Property=Height, Factor=0, Constant=639}"
-             RelativeLayout.HeightConstraint="82" 
-             RelativeLayout.WidthConstraint="282"/>
+        <RelativeLayout Margin="55, 650, 0, 0">
+            <Button x:Name="startButton" Text = "Начать" FontSize="25" FontFamily="Ubuntu" TextColor="#3F3F3F" 
+                    CornerRadius="11" BackgroundColor="#68ED76" 
+                    RelativeLayout.HeightConstraint = "82" RelativeLayout.WidthConstraint ="282" Clicked="OnButtonClicked"/>
         </RelativeLayout>
     </Grid>
      

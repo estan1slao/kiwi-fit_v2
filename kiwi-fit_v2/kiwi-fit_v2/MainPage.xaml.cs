@@ -18,6 +18,8 @@ namespace kiwi_fit_v2
             loadingPicture.Aspect = Aspect.Fill;
         }
 
+        #region При нажатии кнопки перейти на страницу регистрации
+        #endregion
         private async void OnButtonClicked(object sender, System.EventArgs e)
         {
             await Navigation.PushModalAsync(new Registration());
