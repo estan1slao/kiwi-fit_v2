@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.Registration" 
+             BackgroundColor="#D9FFDC">
+    <Grid>
+        <StackLayout Margin="1" Padding="20">
+                <Label Text="Введите свои данные" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
+                <Line X1="1"
+                  Y1="0"
+                  X2="310"
+                  Y2="0"
+                  Stroke="#707070"/>
+            </StackLayout>
+            <Grid Margin="0,5">
+                <Entry x:Name="username" Placeholder="Имя"/>
+            </Grid>
+            <Grid ColumnDefinitions="2" RadioButtonGroup.GroupName="chooseGender">
+                <RadioButton Content="мужской" Grid.Column="1"/>
+                <RadioButton Content="женский" Grid.Column="2"/>
+            </Grid>
+            <Grid ColumnDefinitions="2">
+                <Entry x:Name="userheight" Grid.Column="1" Placeholder="Рост"/>
+                <Entry x:Name="userweight" Grid.Column="2" Placeholder="Вес"/>
+            </Grid>
+        <RelativeLayout>
+            <Button x:Name="sendDataButton" Text = "Начать" FontSize="25" FontFamily="Ubuntu" TextColor="#3F3F3F" 
+                CornerRadius="11" BackgroundColor="#A1A1A1"
+                RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, 
+                Property=Width, Factor=0.5, Constant=-138}" 
+                RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent,
+                Property=Height, Factor=0, Constant=639}"
+                RelativeLayout.HeightConstraint="82" 
+                RelativeLayout.WidthConstraint="282"/>
+        </RelativeLayout>
+    </Grid>
+</ContentPage>
