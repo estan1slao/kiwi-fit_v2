@@ -1,3 +1,6 @@
+kiwi_fit_v2.Droid.CustomEntryRender, kiwi-fit_v2.Android;crc6460acaad18a904cca.CustomEntryRender
+kiwi_fit_v2.Droid.CustomEntryRender;crc6460acaad18a904cca.CustomEntryRender
+kiwi_fit_v2.droid.CustomEntryRender;crc6460acaad18a904cca.CustomEntryRender
 kiwi_fit_v2.Droid.MainActivity, kiwi-fit_v2.Android;crc6460acaad18a904cca.MainActivity
 kiwi_fit_v2.Droid.MainActivity;crc6460acaad18a904cca.MainActivity
 kiwi_fit_v2.droid.MainActivity;crc6460acaad18a904cca.MainActivity

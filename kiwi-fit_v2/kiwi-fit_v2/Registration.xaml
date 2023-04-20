@@ -51,7 +51,7 @@
         </StackLayout>
         <RelativeLayout Margin="55, 650, 0, 0">
                 <Button x:Name="sendDataButton" Text = "Начать" FontSize="25" FontFamily="Ubuntu" TextColor="#3F3F3F" 
-                    CornerRadius="11" BackgroundColor="#A1A1A1" 
+                    CornerRadius="11" BackgroundColor="#A1A1A1" Clicked="OnButtonStartClicked"
                     RelativeLayout.HeightConstraint = "82" RelativeLayout.WidthConstraint ="282"/>
         </RelativeLayout>
         <RelativeLayout Margin="0, 310, 0, 0">

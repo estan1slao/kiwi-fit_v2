@@ -29,6 +29,7 @@ foreground;obj\Debug\130\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.Android\obj\Debug\130\lp\54\jl\res\layout\bottomtablayout.xml
 item;C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.Android\obj\Debug\130\lp\54\jl\res\values\styles.xml
 LinearLayout;C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.Android\obj\Debug\130\lp\54\jl\res\layout\bottomtablayout.xml
+LinearLayout;obj\Debug\130\res\layout1.xml
 paths;C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.Android\obj\Debug\130\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.Android\obj\Debug\130\lp\54\jl\res\values\attrs.xml
 resources;C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.Android\obj\Debug\130\lp\54\jl\res\values\strings.xml

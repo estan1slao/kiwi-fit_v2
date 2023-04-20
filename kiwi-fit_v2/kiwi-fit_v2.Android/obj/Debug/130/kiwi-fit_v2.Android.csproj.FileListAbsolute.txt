@@ -637,3 +637,4 @@ C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.Android\obj\Debug\130\
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.Android\bin\Debug\Ubuntu-Bold.ttf
+C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.Android\obj\Debug\130\android\src\crc6460acaad18a904cca\CustomEntryRender.java
