@@ -24,7 +24,7 @@
         </StackLayout>
         <StackLayout Margin="20, 110, 0, 0" Padding="20">
             <Label Text="Пол" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
-            <Grid ColumnDefinitions="2" RadioButtonGroup.GroupName="chooseGender">
+            <Grid x:Name="gender" ColumnDefinitions="2" RadioButtonGroup.GroupName="chooseGender">
                 <RadioButton Content="мужской" Grid.Column="1" FontFamily="Ubuntu" TextColor="#707070"/>
                 <RadioButton Content="женский" Grid.Column="2" FontFamily="Ubuntu" TextColor="#707070"/>
             </Grid>
@@ -52,7 +52,8 @@
         <RelativeLayout Margin="55, 650, 0, 0">
                 <Button x:Name="sendDataButton" Text = "Начать" FontSize="25" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                     CornerRadius="11" BackgroundColor="#A1A1A1" 
-                    RelativeLayout.HeightConstraint = "82" RelativeLayout.WidthConstraint ="282"/>
+                    RelativeLayout.HeightConstraint = "82" RelativeLayout.WidthConstraint ="282"
+                        Clicked="InitializationUser"/>
         </RelativeLayout>
         <RelativeLayout Margin="0, 310, 0, 0">
             <Frame BackgroundColor="#8BF593" CornerRadius="24" RelativeLayout.HeightConstraint="300" RelativeLayout.WidthConstraint="400"/>
