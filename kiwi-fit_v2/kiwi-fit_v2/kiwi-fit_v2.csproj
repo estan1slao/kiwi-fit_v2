@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,7 +11,49 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="background.png" />
+    <None Remove="im1.png" />
+    <None Remove="im2.png" />
+    <None Remove="im3.png" />
+    <None Remove="im4.png" />
+    <None Remove="im5.png" />
+    <None Remove="im6.png" />
+    <None Remove="im7.png" />
+    <None Remove="im8.png" />
+    <None Remove="startpicture.png" />
+    <None Remove="Ubuntu-Bold.ttf" />
+    <None Remove="userbg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="background.png" />
+    <EmbeddedResource Include="im1.png" />
+    <EmbeddedResource Include="im2.png" />
+    <EmbeddedResource Include="im3.png" />
+    <EmbeddedResource Include="im4.png" />
+    <EmbeddedResource Include="im5.png" />
+    <EmbeddedResource Include="im6.png" />
+    <EmbeddedResource Include="im7.png" />
+    <EmbeddedResource Include="im8.png" />
+    <EmbeddedResource Include="startpicture.png" />
+    <EmbeddedResource Include="Ubuntu-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userbg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.0-preview.3.23174.8" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Registration.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

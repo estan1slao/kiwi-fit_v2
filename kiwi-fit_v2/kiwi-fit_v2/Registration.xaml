@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.Registration" 
+             BackgroundColor="#D9FFDC">
+    <Grid>
+        <StackLayout Margin="20, 0, 0, 0">
+                <Label Text="Введите свои данные" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
+                <Line X1="1"
+                  Y1="0"
+                  X2="310"
+                  Y2="0"
+                  Stroke="#707070"/>
+        </StackLayout>
+        <StackLayout Margin="20, 44, 0, 0">
+            <Label Text="Имя" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
+            <Grid Margin="0,5">
+                <RelativeLayout>
+                    <Frame BackgroundColor="#D9FFDC" CornerRadius="11" BorderColor="#707070" HeightRequest="23"
+                           RelativeLayout.HeightConstraint="35" RelativeLayout.WidthConstraint="300"/>
+                    <Entry x:Name="username" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="300" FontSize="20"/>
+                </RelativeLayout>
+            </Grid>
+        </StackLayout>
+        <StackLayout Margin="20, 110, 0, 0" Padding="20">
+            <Label Text="Пол" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
+            <Grid ColumnDefinitions="2" RadioButtonGroup.GroupName="chooseGender">
+                <RadioButton x:Name="male" Content="мужской" Grid.Column="1" FontFamily="Ubuntu" TextColor="#707070"/>
+                <RadioButton x:Name="female"  Content="женский" Grid.Column="2" FontFamily="Ubuntu" TextColor="#707070"/>
+            </Grid>
+        </StackLayout>
+        <StackLayout Margin="20, 200, 0, 0" >
+            <Grid ColumnDefinitions="2" RowDefinitions="2">
+                <Label Grid.Row="1" Grid.Column="1" Text="Рост" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
+                <Grid Grid.Column="1" Grid.Row="2" Margin="0, -5, 0, 0">
+                    <RelativeLayout>
+                        <Frame BackgroundColor="#D9FFDC" CornerRadius="11" BorderColor="#707070"
+                         RelativeLayout.HeightConstraint = "35" RelativeLayout.WidthConstraint ="120"/>
+                        <Entry x:Name="userheight" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="120" Keyboard="Numeric"/>
+                    </RelativeLayout>
+                </Grid>
+                <Label Grid.Row="1" Grid.Column="2" Text="Вес" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
+                <Grid  Grid.Row="2" Grid.Column="2" Margin="0, -5, 0, 0">
+                    <RelativeLayout>
+                        <Frame BackgroundColor="#D9FFDC" CornerRadius="11" BorderColor="#707070" 
+                               RelativeLayout.HeightConstraint="35" RelativeLayout.WidthConstraint="120"/>
+                        <Entry x:Name="userweight" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="120" Keyboard="Numeric"/>
+                    </RelativeLayout>
+                </Grid>
+            </Grid>
+        </StackLayout>
+        <RelativeLayout Margin="0, 310, 0, 0">
+            <Frame BackgroundColor="#8BF593" CornerRadius="24" RelativeLayout.HeightConstraint="300" RelativeLayout.WidthConstraint="400"/>
+        </RelativeLayout>
+        <RelativeLayout Margin="55, 650, 0, 0">
+            <Button x:Name="sendDataButton" Text = "Начать" FontSize="25" FontFamily="Ubuntu" TextColor="#3F3F3F" 
+                    CornerRadius="11" BackgroundColor="#A1A1A1"
+                    RelativeLayout.HeightConstraint = "82" RelativeLayout.WidthConstraint ="282"
+                        Clicked="InitializationUser"/>
+        </RelativeLayout>
+    </Grid>
+</ContentPage>
