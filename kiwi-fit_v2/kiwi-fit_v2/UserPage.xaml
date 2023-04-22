@@ -5,7 +5,7 @@
 
     <Grid>
         <Image x:Name="userPageBackground" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-        <Label Text="Ростислав" TextColor="#535353" FontSize="36" Padding="14, 49, 0, 0"/>
+        <Label x:Name ="username" TextColor="#535353" FontSize="36" Padding="14, 49, 0, 0"/>
         <Grid Margin="0, 100, 0, 0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10" />
@@ -40,9 +40,9 @@
                 <Grid RowDefinitions="3" Padding="61, 21, 0, 0">
                     <Image x:Name="im1" Grid.Row="1" HeightRequest="37" WidthRequest="38"/>
                     <Label Grid.Row="2" Text="ИМТ" FontSize="20" TextColor="#535353"/>
-                    <Label x:Name="imt" Text="23.4" Grid.Row="3" FontSize="20" TextColor="#535353"/>
+                    <Label x:Name="imt" Grid.Row="3" FontSize="20" TextColor="#535353"/>
                 </Grid>
-                <Label x:Name="imtNormal" Text="масса тела в норме" Grid.Row="4" FontSize="20" TextColor="#535353" 
+                <Label x:Name="imtNormal" Grid.Row="4" FontSize="20" TextColor="#535353" 
                        WidthRequest="116" Margin="22, 140, 0, 0" HorizontalTextAlignment="Center"/>
             </RelativeLayout>
 
@@ -58,11 +58,11 @@
                         <RowDefinition Height="20" />
                     </Grid.RowDefinitions>
                     <Label Grid.Row="1" Text="Рост" FontSize="20" TextColor="#535353" HorizontalOptions="Center"/>
-                    <Label x:Name="height" Text="182" Grid.Row="2" FontSize="20" TextColor="#535353" 
+                    <Label x:Name="height" Grid.Row="2" FontSize="20" TextColor="#535353" 
                            HorizontalOptions="Center" Padding="0, -5, 0, 0"/>
                     <Label Grid.Row="3" Text="Вес" FontSize="20" TextColor="#535353" 
                            HorizontalOptions="Center" Padding="0, -3, 0, 0"/>
-                    <Label x:Name="weight" Text="75" Grid.Row="4" FontSize="20" TextColor="#535353" 
+                    <Label x:Name="weight" Grid.Row="4" FontSize="20" TextColor="#535353" 
                            HorizontalOptions="Center" Padding="0, -5, 0, 0"/>
                     <Label Grid.Row="5" Text="Пол" FontSize="20" TextColor="#535353" 
                            HorizontalOptions="Center" Padding="0, -5, 0, 0"/>
@@ -79,7 +79,7 @@
             <RelativeLayout Grid.Column="1">
                 <Frame Grid.Row="2" CornerRadius="17" BackgroundColor="#D9FFDC" 
                        RelativeLayout.HeightConstraint="142" RelativeLayout.WidthConstraint="129"/>
-                <Label x:Name="countOfWater"  Padding="10, 10, 0, 0" Text="1.5 литра" Grid.Row="1" FontSize="20" TextColor="#535353"/>
+                <Label x:Name="countOfWater"  Padding="10, 10, 0, 0" Grid.Row="1" FontSize="20" TextColor="#535353"/>
                 <Image x:Name="im4" HeightRequest="84" WidthRequest="74" 
                        RelativeLayout.XConstraint="28" RelativeLayout.YConstraint="45"/>
                 <Frame CornerRadius="17" Background="#0A2416" Opacity="0.5" RelativeLayout.HeightConstraint="142" 
