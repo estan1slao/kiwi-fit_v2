@@ -12,16 +12,34 @@
 
   <ItemGroup>
     <None Remove="background.png" />
+    <None Remove="im1.png" />
+    <None Remove="im2.png" />
+    <None Remove="im3.png" />
+    <None Remove="im4.png" />
+    <None Remove="im5.png" />
+    <None Remove="im6.png" />
+    <None Remove="im7.png" />
+    <None Remove="im8.png" />
     <None Remove="startpicture.png" />
     <None Remove="Ubuntu-Bold.ttf" />
+    <None Remove="userbg.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="background.png" />
+    <EmbeddedResource Include="im1.png" />
+    <EmbeddedResource Include="im2.png" />
+    <EmbeddedResource Include="im3.png" />
+    <EmbeddedResource Include="im4.png" />
+    <EmbeddedResource Include="im5.png" />
+    <EmbeddedResource Include="im6.png" />
+    <EmbeddedResource Include="im7.png" />
+    <EmbeddedResource Include="im8.png" />
     <EmbeddedResource Include="startpicture.png" />
     <EmbeddedResource Include="Ubuntu-Bold.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="userbg.png" />
   </ItemGroup>
 
   <ItemGroup>
