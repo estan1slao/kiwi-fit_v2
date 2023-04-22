@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,12 @@ namespace kiwi_fit_v2
     {
         public MainPage()
         {
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "userInfo.json");
+            if (File.Exists(path))
+            {
+                Navigation.PushModalAsync(new UserPage());
+                return;
+            }
             InitializeComponent();
             loadingPicture.Source = ImageSource.FromResource("kiwi-fit_v2.startpicture.png");
             loadingPicture.Aspect = Aspect.Fill;

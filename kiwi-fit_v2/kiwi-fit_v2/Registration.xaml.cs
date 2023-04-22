@@ -43,9 +43,7 @@ namespace kiwi_fit_v2
             var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "userInfo.json");
             var json = JsonSerializer.Serialize(userInfo);
 
-            if (!File.Exists(path))
-                File.Create(path);
-            else
+            if (File.Exists(path))
                 File.Delete(path);
             File.WriteAllText(path, json);
             await Navigation.PushModalAsync(new UserPage());
