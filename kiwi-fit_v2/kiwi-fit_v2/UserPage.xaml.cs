@@ -38,7 +38,7 @@ namespace kiwi_fit_v2
         {
             #region front-end
             InitializeComponent();
-            userPageBackground.Source = ImageSource.FromResource("kiwi -fit_v2.userbg.png");
+            userPageBackground.Source = ImageSource.FromResource("kiwi-fit_v2.userbg.png");
             userPageBackground.Aspect = Aspect.Fill;
 
             im1.Source = ImageSource.FromResource("kiwi-fit_v2.im1.png");
@@ -46,6 +46,9 @@ namespace kiwi_fit_v2
 
             im2.Source = ImageSource.FromResource("kiwi-fit_v2.im2.png");
             im2.Aspect = Aspect.Fill;
+
+            im3.Source = ImageSource.FromResource("kiwi-fit_v2.im3.png");
+            im3.Aspect = Aspect.Fill;
 
             im4.Source = ImageSource.FromResource("kiwi-fit_v2.im4.png");
             im4.Aspect = Aspect.Fill;

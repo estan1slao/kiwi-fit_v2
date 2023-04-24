@@ -48,7 +48,7 @@ namespace kiwi_fit_v2
             else
                 File.Delete(path);
             File.WriteAllText(path, json);
-            await Navigation.PushModalAsync(new UserPage());
+            await Navigation.PushModalAsync(new StepOne());
             return;
         }
     }

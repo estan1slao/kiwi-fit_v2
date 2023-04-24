@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.StepThree">
+    <Grid>
+        <Image x:Name="userPageBackground" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        <Label x:Name ="username" Text="Ростислав" TextColor="#535353" FontSize="36" Padding="14, 49, 0, 0" FontFamily="Ubuntu"/>
+        <Grid Margin="0, 100, 0, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Label Text="Каллории" Grid.Column="1" Grid.Row="1" FontSize="16" FontFamily="Ubuntu"
+                   TextColor="#535353" Opacity="0.8" HorizontalOptions="Center"/>
+            <Label x:Name="Calories" Text="1111" Grid.Column="1" Grid.Row="2" FontSize="16" TextColor="#535353" 
+                   Opacity="0.8" HorizontalOptions="Center" FontFamily="Ubuntu"/>
+
+            <Label Text="Белки" Grid.Column="2" Grid.Row="1" FontSize="16" TextColor="#535353" FontFamily="Ubuntu"
+                   Opacity="0.8" HorizontalOptions="Center"/>
+            <Label x:Name="Proteins" Text="34" Grid.Column="2" Grid.Row="2" FontSize="16" TextColor="#535353" FontFamily="Ubuntu"
+                   Opacity="0.8" HorizontalOptions="Center"/>
+
+            <Label Text="Жиры" Grid.Column="3" Grid.Row="1" FontSize="16" FontFamily="Ubuntu"
+                   TextColor="#535353" Opacity="0.8" HorizontalOptions="Center"/>
+            <Label x:Name="Fats" Text="60" Grid.Column="3" Grid.Row="2" FontSize="16" TextColor="#535353" 
+                   Opacity="0.8" HorizontalOptions="Center" FontFamily="Ubuntu"/>
+
+            <Label Text="Углеводы" Grid.Column="4" Grid.Row="1" FontSize="16" TextColor="#535353" FontFamily="Ubuntu"
+                   Opacity="0.8" HorizontalOptions="Center"/>
+            <Label x:Name="Carbo" Text="70" Grid.Column="4" Grid.Row="2" FontSize="16" TextColor="#535353" FontFamily="Ubuntu"
+                   Opacity="0.8" HorizontalOptions="Center"/>
+        </Grid>
+
+        <Grid Margin="14, 267, 0, 0" ColumnDefinitions="2">
+            <RelativeLayout Grid.Column="1">
+                <Frame CornerRadius="24" BackgroundColor="#D9FFDC" 
+                       RelativeLayout.HeightConstraint="200" RelativeLayout.WidthConstraint="158"/>
+                <Grid RowDefinitions="3" Padding="61, 21, 0, 0">
+                    <Image x:Name="im1" Grid.Row="1" HeightRequest="37" WidthRequest="38"/>
+                    <Label Grid.Row="2" Text="ИМТ" FontSize="20" TextColor="#535353" FontFamily="Ubuntu"/>
+                    <Label x:Name="imt" Grid.Row="3" FontSize="20" TextColor="#535353" FontFamily="Ubuntu"/>
+                </Grid>
+                <Label x:Name="imtNormal" Grid.Row="4" FontSize="20" TextColor="#535353" FontFamily="Ubuntu"
+                       WidthRequest="116" Margin="22, 140, 0, 0" HorizontalTextAlignment="Center"/>
+            </RelativeLayout>
+
+            <RelativeLayout Grid.Column ="2">
+                <Frame Grid.Row="2" CornerRadius="24" BackgroundColor="#D9FFDC" 
+                       RelativeLayout.HeightConstraint="200" RelativeLayout.WidthConstraint="158"/>
+            </RelativeLayout>
+        </Grid>
+
+        <Grid Margin ="29, 478, 0, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"/>
+                <ColumnDefinition Width="185"/>
+            </Grid.ColumnDefinitions>
+            <RelativeLayout Grid.Column="1">
+                <Frame Grid.Row="2" CornerRadius="17" BackgroundColor="#D9FFDC" 
+                       RelativeLayout.HeightConstraint="142" RelativeLayout.WidthConstraint="129"/>
+                <Label x:Name="countOfWater"  Padding="10, 10, 0, 0" Grid.Row="1" FontSize="20" FontFamily="Ubuntu" TextColor="#535353"/>
+                <Image x:Name="im4" HeightRequest="84" WidthRequest="74" 
+                       RelativeLayout.XConstraint="28" RelativeLayout.YConstraint="45"/>
+                <Path Fill="#0A2416" Opacity="0.5" Margin="0, 51, 0, 0"
+                Data="M39.3703 11.0308C13.8317 13.773 1.82936 6.26454 0.174078 3C0.174078 3 -0.00502203 53.372 0.174237 70C-1.32568 83 6.89435 93.3418 23.4994 91.8282H111.053C120.124 91.8282 129.168 87.2872 130.174 75.6826V10.0514C126.391 10.3778 114.425 9.36586 96.8321 2.70619C74.8405 -5.61839 71.2935 7.60301 39.3703 11.0308Z" />
+            </RelativeLayout>
+            <RelativeLayout Grid.Column="2">
+                <Frame Grid.Row="2" CornerRadius="17" BackgroundColor="#D9FFDC"
+                       RelativeLayout.HeightConstraint="142" RelativeLayout.WidthConstraint="129"/>
+                <Label Text="посмотреть статистику" FontSize="20" Padding="10, 10, 0, 0" FontFamily="Ubuntu"/>
+                <ImageButton x:Name="im5" HeightRequest="68" WidthRequest="77" BackgroundColor="#D9FFDC"
+                             RelativeLayout.XConstraint="25" RelativeLayout.YConstraint="66"/>
+            </RelativeLayout>
+        </Grid>
+        <RelativeLayout Margin="0, 709, 0, 0" HorizontalOptions="Center">
+            <Frame CornerRadius="35" BackgroundColor="#D9FFDC" 
+                       RelativeLayout.HeightConstraint="67" RelativeLayout.WidthConstraint="234"/>
+            <ImageButton x:Name="im6" HeightRequest="32" WidthRequest="33" BackgroundColor="#D9FFDC"
+                             RelativeLayout.XConstraint="35" RelativeLayout.YConstraint="16"/>
+            <ImageButton x:Name="im7" HeightRequest="50" WidthRequest="60" BackgroundColor="#D9FFDC"
+                            RelativeLayout.XConstraint="85" RelativeLayout.YConstraint="6"/>
+            <ImageButton x:Name="im8" HeightRequest="35" WidthRequest="35" BackgroundColor="#D9FFDC" 
+                         RelativeLayout.XConstraint="165" RelativeLayout.YConstraint="13"/>
+        </RelativeLayout>
+        <BoxView BackgroundColor="#1B1B1B" Opacity="0.9"/>
+        <RelativeLayout  Margin="210, 268, 0, 0">
+            <Frame Grid.Row="2" CornerRadius="24" BackgroundColor="#D9FFDC" 
+                       RelativeLayout.HeightConstraint="200" RelativeLayout.WidthConstraint="158"/>
+            <Grid Padding="55, -15, 0, 0" RelativeLayout.HeightConstraint="200">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="25" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="25" />
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="1" Text="Рост" FontSize="20" TextColor="#535353" HorizontalOptions="Center" FontFamily="Ubuntu"/>
+                <Label x:Name="height" Grid.Row="2" FontSize="20" TextColor="#535353" FontFamily="Ubuntu"
+                           HorizontalOptions="Center" Padding="0, -5, 0, 0"/>
+                <Label Grid.Row="3" Text="Вес" FontSize="20" TextColor="#535353" FontFamily="Ubuntu"
+                           HorizontalOptions="Center" Padding="0, -3, 0, 0"/>
+                <Label x:Name="weight" Grid.Row="4" FontSize="20" TextColor="#535353" FontFamily="Ubuntu"
+                           HorizontalOptions="Center" Padding="0, -5, 0, 0"/>
+                <Label Grid.Row="5" Text="Пол" FontSize="20" TextColor="#535353" FontFamily="Ubuntu"
+                           HorizontalOptions="Center" Padding="0, -5, 0, 0"/>
+            </Grid>
+            <Image x:Name="im2" Grid.Row="1" HeightRequest="45" WidthRequest="38" 
+                       RelativeLayout.XConstraint="60" RelativeLayout.YConstraint="154"/>
+        </RelativeLayout>
+        <RelativeLayout>
+            <Image x:Name="im3" HeightRequest = "25" WidthRequest = "30"
+                             RelativeLayout.XConstraint = "320" RelativeLayout.YConstraint = "280"/>
+        </RelativeLayout>
+        <RelativeLayout>
+            <Label Text="изменение данных" FontSize="20" FontFamily="Ubuntu" TextColor="#D3D3D3"
+                   RelativeLayout.XConstraint="22" RelativeLayout.YConstraint="160"/>
+            <Path Data="M104.863 112.858C105.613 113.21 106.506 112.887 106.858 112.137L112.593 99.916C112.945 99.166 112.622 98.2728 111.872 97.9208C111.122 97.5689 110.229 97.8915 109.877 98.6415L104.779 109.505L93.916 104.407C93.166 104.055 92.2728 104.378 91.9209 105.128C91.5689 105.878 91.8916 106.771 92.6415 107.123L104.863 112.858ZM106.911 110.99C98.9637 88.9895 84.1983 57.2303 65.6956 33.4904C56.4479 21.6251 46.1884 11.6605 35.287 5.96278C24.3327 0.237446 12.6838 -1.19328 0.882944 4.13277L2.11706 6.86717C12.9162 1.99322 23.5881 3.23333 33.8974 8.62153C44.2595 14.0374 54.2062 23.629 63.3294 35.3346C81.5684 58.7363 96.203 90.1771 104.089 112.01L106.911 110.99Z"
+                  Fill="#219C0D"
+                  Aspect="Uniform"
+                  HorizontalOptions="Start" RelativeLayout.XConstraint="212" RelativeLayout.YConstraint="167"/>
+        </RelativeLayout>
+        <Label Text="здесь вы можете поменять рост и" FontSize="20" FontFamily="Ubuntu" TextColor="#D3D3D3" Margin="25, 530, 0, 0"/>
+        <Label Text="вес, чтобы получить актуальный" FontSize="20" FontFamily="Ubuntu" TextColor="#D3D3D3" Margin="25, 555, 0, 0"/>
+        <Label Text="ИМТ" FontSize="20" FontFamily="Ubuntu" TextColor="#D3D3D3" Margin="25, 580, 0, 0"/>
+        <Line X1= "16"
+              Y1="692"
+              X2="378"
+              Y2="692"
+              Stroke="#707070"/>
+        <RelativeLayout>
+            <ImageButton x:Name="im9" HeightRequest="55" WidthRequest="55" BackgroundColor="#00ffffff" Clicked="GoToUserPage"
+                             RelativeLayout.XConstraint="20" RelativeLayout.YConstraint="700"/>
+            <ImageButton x:Name="im10" HeightRequest="55" WidthRequest="55" BackgroundColor="#00ffffff" Clicked="GoNextPage"
+                             RelativeLayout.XConstraint="325" RelativeLayout.YConstraint="700"/>
+            <Label Text = "пропустить" FontSize="16" TextColor="#C5B7B7" FontFamily="Ubuntu" Margin="16, 750, 0, 0"/>
+            <Label Text = "обучение" FontSize="16" TextColor="#C5B7B7" FontFamily="Ubuntu" Margin="16, 770, 0, 0"/>
+            <Label Text = "следующий" FontSize="16" TextColor="#C5B7B7" FontFamily="Ubuntu" Margin="293, 750, 0, 0"/>
+        </RelativeLayout>
+    </Grid>
+</ContentPage>
