@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638177975466347560
+_nugetassetstimestamp=638183187394190337
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=c:\users\ksupo\github\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.android\kiwi-fit_v2.android.csproj
+projectfullpath=c:\users\vogade\desktop\github\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2.android\kiwi-fit_v2.android.csproj

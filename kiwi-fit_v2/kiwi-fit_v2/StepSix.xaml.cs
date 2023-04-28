@@ -3,18 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Text.Json;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Reflection;
+using static User.User;
 
 namespace kiwi_fit_v2
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class StepSix : ContentPage
 	{
-		public StepSix ()
+        private void Initialization()
+        {
+            var pathInfo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "userInfo.json");
+            if (!File.Exists(pathInfo))
+                Navigation.PushModalAsync(new Registration());
+            var info = JsonSerializer.Deserialize<UserInformation>(File.ReadAllText(pathInfo));
+            username.Text = info.Name;
+            height.Text = info.Height.ToString();
+            weight.Text = info.Weight.ToString();
+            imt.Text = info.IMT.ToString();
+            imtNormal.Text = info.TextIMT.ToString();
+            countOfWater.Text = info.TextCountOfWater.ToString();
+        }
+        public StepSix ()
 		{
 			InitializeComponent ();
+            Initialization();
             userPageBackground.Source = ImageSource.FromResource("kiwi-fit_v2.userbg.png");
             userPageBackground.Aspect = Aspect.Fill;
 

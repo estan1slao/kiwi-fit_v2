@@ -4,34 +4,25 @@ using System.Text.Json;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static User.User;
 
 namespace kiwi_fit_v2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserPage : ContentPage
     {
-        private void Initialization(UserInformation info)
+        private void Initialization()
         {
+            var pathInfo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "userInfo.json");
+            if (!File.Exists(pathInfo))
+                Navigation.PushModalAsync(new Registration());
+            var info = JsonSerializer.Deserialize<UserInformation>(File.ReadAllText(pathInfo));
             username.Text = info.Name;
             height.Text = info.Height.ToString();
             weight.Text = info.Weight.ToString();
-            var userIMT = Math.Round((info.Weight / (info.Height * info.Height)) * 10000, 1);
-            imt.Text = userIMT.ToString();
-            if (userIMT < 16)
-                imtNormal.Text = "Дефицит массы тела";
-            else if (userIMT < 18.5)
-                imtNormal.Text = "Минимальная масса тела";
-            else if (userIMT < 25)
-                imtNormal.Text = "Масса тела в норме";
-            else if (userIMT < 30)
-                imtNormal.Text = "Избыток веса";
-            else if (userIMT < 35)
-                imtNormal.Text = "Первая степень ожирения";
-            else if (userIMT < 40)
-                imtNormal.Text = "Вторая степень ожирения";
-            else
-                imtNormal.Text = "Третья степень ожирения";
-            countOfWater.Text = $"{Math.Round(0.025 * info.Weight, 1)} - {Math.Round(0.03 * info.Weight, 1)} л.";
+            imt.Text = info.IMT.ToString();
+            imtNormal.Text = info.TextIMT.ToString();
+            countOfWater.Text = info.TextCountOfWater.ToString();
         }
 
         public UserPage()
@@ -67,12 +58,7 @@ namespace kiwi_fit_v2
             #endregion
 
             #region back-end
-            var pathInfo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "userInfo.json");
-            if (!File.Exists(pathInfo))
-                Navigation.PushModalAsync(new Registration());
-            var jsonInfo = JsonSerializer.Deserialize<UserInformation>(File.ReadAllText(pathInfo));
-            Initialization(jsonInfo);
-
+            Initialization();
             #endregion
         }
     }
