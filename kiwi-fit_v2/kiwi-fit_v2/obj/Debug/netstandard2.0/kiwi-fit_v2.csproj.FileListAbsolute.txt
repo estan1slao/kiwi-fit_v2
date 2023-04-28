@@ -40,3 +40,4 @@ C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepFour.xaml.g.cs
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepFive.xaml.g.cs
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepInstr1.xaml.g.cs
+C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepSix.xaml.g.cs

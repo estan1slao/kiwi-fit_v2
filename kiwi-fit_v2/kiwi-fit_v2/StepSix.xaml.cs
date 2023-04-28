@@ -9,19 +9,23 @@ using Xamarin.Forms.Xaml;
 
 namespace kiwi_fit_v2
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StepFive : ContentPage
-    {
-        public StepFive()
-        {
-            InitializeComponent();
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class StepSix : ContentPage
+	{
+		public StepSix ()
+		{
+			InitializeComponent ();
             userPageBackground.Source = ImageSource.FromResource("kiwi-fit_v2.userbg.png");
             userPageBackground.Aspect = Aspect.Fill;
+
             im1.Source = ImageSource.FromResource("kiwi-fit_v2.im1.png");
             im1.Aspect = Aspect.Fill;
 
             im2.Source = ImageSource.FromResource("kiwi-fit_v2.im2.png");
             im2.Aspect = Aspect.Fill;
+
+            im3.Source = ImageSource.FromResource("kiwi-fit_v2.im3.png");
+            im3.Aspect = Aspect.Fill;
 
             im4.Source = ImageSource.FromResource("kiwi-fit_v2.im4.png");
             im4.Aspect = Aspect.Fill;
@@ -37,22 +41,11 @@ namespace kiwi_fit_v2
 
             im8.Source = ImageSource.FromResource("kiwi-fit_v2.im8.png");
             im8.Aspect = Aspect.Fill;
-
-            im9.Source = ImageSource.FromResource("kiwi-fit_v2.im9.png");
-            im9.Aspect = Aspect.Fill;
-
-            im10.Source = ImageSource.FromResource("kiwi-fit_v2.im10.png");
-            im10.Aspect = Aspect.Fill;
-        }
-
-        private async void GoToUserPage(object sender, System.EventArgs e)
-        {
-            await Navigation.PushModalAsync(new UserPage());
         }
 
         private async void GoNextPage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new StepSix());
+            await Navigation.PushModalAsync(new StepInstr1());
         }
     }
 }
