@@ -48,3 +48,4 @@ C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\net
 C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepSix.xaml.g.cs
 C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepThree.xaml.g.cs
 C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepTwo.xaml.g.cs
+C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepInstr2.xaml.g.cs

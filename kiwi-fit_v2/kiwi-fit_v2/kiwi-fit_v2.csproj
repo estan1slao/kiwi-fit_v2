@@ -25,6 +25,7 @@
     <None Remove="im8.png" />
     <None Remove="im9.png" />
     <None Remove="startpicture.png" />
+    <None Remove="step2bg.png" />
     <None Remove="stepsbg.png" />
     <None Remove="Ubuntu-Bold.ttf" />
     <None Remove="userbg.png" />
@@ -44,6 +45,7 @@
     <EmbeddedResource Include="im8.png" />
     <EmbeddedResource Include="im9.png" />
     <EmbeddedResource Include="startpicture.png" />
+    <EmbeddedResource Include="step2bg.png" />
     <EmbeddedResource Include="stepsbg.png" />
     <EmbeddedResource Include="Ubuntu-Bold.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -74,6 +76,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="StepInstr1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="StepInstr2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="StepOne.xaml">
