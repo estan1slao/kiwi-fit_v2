@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.StepInstr3">
+    <Grid>
+        <Image x:Name="stepbg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        <Label Text="Это список продуктов, здесь" FontSize="16" FontFamily="Ubuntu" 
+               TextColor="#D3D3D3" Margin="60, 365, 0, 0"/>
+        <Label Text="можно посмотреть КБЖУ для" FontSize="16" FontFamily="Ubuntu" 
+               TextColor="#D3D3D3" Margin="60, 390, 0, 0"/>
+        <Label Text="овощей, круп и т.д" FontSize="16" FontFamily="Ubuntu" 
+               TextColor="#D3D3D3" Margin="60, 415, 0, 0"/>
+        <RelativeLayout Margin="65, 456, 0, 0">
+            <Image x:Name="menuPic" WidthRequest="271" HeightRequest="85"/>
+            <Ellipse Fill = "#1B1B1B" Opacity="0.6"
+                     WidthRequest="56"
+                     HeightRequest="56" Margin="183, 9, 0, 0"/>
+
+        </RelativeLayout>
+        <RelativeLayout>
+            <Button x:Name="sendDataButton" Text = "Продолжить" FontSize="25" FontFamily="Ubuntu" TextColor="#3F3F3F" 
+                    CornerRadius="11" BackgroundColor="#68ED76"
+                     Margin="55, 631, 0, 0" HeightRequest="82" WidthRequest="282"/>
+        </RelativeLayout>
+    </Grid>
+</ContentPage>

@@ -20,7 +20,7 @@
             <ImageButton x:Name="im9" HeightRequest="55" WidthRequest="55" BackgroundColor="#00ffffff"
                              RelativeLayout.XConstraint="20" RelativeLayout.YConstraint="700"/>
             <ImageButton x:Name="im10" HeightRequest="55" WidthRequest="55" BackgroundColor="#00ffffff"
-                             RelativeLayout.XConstraint="325" RelativeLayout.YConstraint="700"/>
+                             RelativeLayout.XConstraint="325" RelativeLayout.YConstraint="700" Clicked="GoNextPage"/>
             <Label Text = "пропустить" FontSize="16" TextColor="#C5B7B7" FontFamily="Ubuntu" Margin="16, 750, 0, 0"/>
             <Label Text = "обучение" FontSize="16" TextColor="#C5B7B7" FontFamily="Ubuntu" Margin="16, 770, 0, 0"/>
             <Label Text = "следующий" FontSize="16" TextColor="#C5B7B7" FontFamily="Ubuntu" Margin="293, 750, 0, 0"/>
