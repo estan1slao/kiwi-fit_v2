@@ -20,6 +20,8 @@ namespace kiwi_fit_v2
         public Registration()
         {
             InitializeComponent();
+            im14.Source = ImageSource.FromResource("kiwi-fit_v2.im14.png");
+            im14.Aspect = Aspect.Fill;
         }
 
         private async void InitializationUser(object sender, System.EventArgs e)

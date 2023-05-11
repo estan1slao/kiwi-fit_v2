@@ -16,6 +16,7 @@
     <None Remove="im10.png" />
     <None Remove="im11.png" />
     <None Remove="im12.png" />
+    <None Remove="im14.png" />
     <None Remove="im2.png" />
     <None Remove="im3.png" />
     <None Remove="im4.png" />
@@ -37,6 +38,7 @@
     <EmbeddedResource Include="im1.png" />
     <EmbeddedResource Include="im10.png" />
     <EmbeddedResource Include="im12.png" />
+    <EmbeddedResource Include="im14.png" />
     <EmbeddedResource Include="im2.png" />
     <EmbeddedResource Include="im3.png" />
     <EmbeddedResource Include="im4.png" />
@@ -69,6 +71,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Registration.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Registration1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Registration2.xaml">
