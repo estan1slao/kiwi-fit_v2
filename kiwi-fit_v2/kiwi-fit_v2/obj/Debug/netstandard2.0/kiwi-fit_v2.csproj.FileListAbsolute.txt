@@ -52,3 +52,7 @@ C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepInstr3.xaml.g.cs
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\Registration2.xaml.g.cs
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\Registration1.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\Registration1.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\Registration2.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepInstr2.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepInstr3.xaml.g.cs

@@ -13,25 +13,30 @@ using static User.User;
 
 namespace kiwi_fit_v2
 {
-
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Registration : ContentPage
     {
+        public bool activitySelected = false;
+        public UserInformation userInfo = new UserInformation();
         public Registration()
         {
             InitializeComponent();
+            InformationLast();
             im14.Source = ImageSource.FromResource("kiwi-fit_v2.im14.png");
             im14.Aspect = Aspect.Fill;
         }
 
-        private async void InitializationUser(object sender, System.EventArgs e)
+        public async void InitializationUser(object sender, System.EventArgs e)
         {
             if (username.Text == null || userheight.Text == null || userweight.Text == null || (!male.IsChecked && !female.IsChecked))
             {
                 await DisplayAlert("Ошибка", "Введите корректные данные", "Продолжить");
                 return;
             }
-            var userInfo = new UserInformation { Name = username.Text.Trim(), Weight = double.Parse(userweight.Text.Trim()), Height = double.Parse(userheight.Text.Trim()), Gender = male.IsChecked ? 0: 1 };
+            userInfo.Name = username.Text.Trim();
+            userInfo.Weight = double.Parse(userweight.Text.Trim());
+            userInfo.Height = double.Parse(userheight.Text.Trim());
+            userInfo.Gender = male.IsChecked ? 0 : female.IsChecked ? 1 : -1;
             if (userInfo.Name.Length < 1 || userInfo.Height < 140 || userInfo.Weight < 36)
             {
                 await DisplayAlert("Ошибка", "Введите корректные данные", "Продолжить");
@@ -57,14 +62,140 @@ namespace kiwi_fit_v2
             userInfo.TextIMT = imtText;
             userInfo.TextCountOfWater = $"{Math.Round(0.025 * userInfo.Weight, 1)} - {Math.Round(0.03 * userInfo.Weight, 1)} л.";
             userInfo.Date = DateTime.Now;
-            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "userInfo.json");
+            if (activitySelected)
+            {
+                var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "tempInfo.json");
+                var json = JsonSerializer.Serialize(userInfo);
+
+                if (File.Exists(path))
+                    File.Delete(path);
+                File.WriteAllText(path, json);
+                await Navigation.PushModalAsync(new Registration2());
+            }
+            else
+                await DisplayAlert("Ошибка", "Введите корректные данные", "Продолжить");
+            return;
+        }
+
+        private void AbsenceClicked(object sender, System.EventArgs e)
+        {
+            activitySelected = true;
+            userInfo.Activity = 0;
+            if (absence.BackgroundColor == Color.FromHex("#68ED76") && 
+                TwoTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
+                ThreeTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
+                FiveTimeAWeek.BackgroundColor == Color.FromHex("#68ED76"))
+                absence.BackgroundColor = Color.FromHex("#2B6130");
+            else
+            {
+                absence.BackgroundColor = Color.FromHex("#68ED76");
+                TwoTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                ThreeTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                FiveTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                absence.BackgroundColor = Color.FromHex("#2B6130");
+            }
+        }
+
+        private void TwoTimeAWeekClicked(object sender, System.EventArgs e)
+        {
+            activitySelected = true;
+            userInfo.Activity = 1;
+            if (absence.BackgroundColor == Color.FromHex("#68ED76") &&
+                TwoTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
+                ThreeTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
+                FiveTimeAWeek.BackgroundColor == Color.FromHex("#68ED76"))
+                TwoTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+            else
+            {
+                absence.BackgroundColor = Color.FromHex("#68ED76");
+                TwoTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                ThreeTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                FiveTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                TwoTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+            }
+        }
+
+        private void ThreeTimeAWeekClicked(object sender, System.EventArgs e)
+        {
+            activitySelected = true;
+            userInfo.Activity = 2;
+            if (absence.BackgroundColor == Color.FromHex("#68ED76") &&
+                TwoTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
+                ThreeTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
+                FiveTimeAWeek.BackgroundColor == Color.FromHex("#68ED76"))
+                ThreeTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+            else
+            {
+                absence.BackgroundColor = Color.FromHex("#68ED76");
+                TwoTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                ThreeTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                FiveTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                ThreeTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+            }
+        }
+
+        private void FiveTimeAWeekClicked(object sender, System.EventArgs e)
+        {
+            activitySelected = true;
+            userInfo.Activity = 3;
+            if (absence.BackgroundColor == Color.FromHex("#68ED76") &&
+                TwoTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
+                ThreeTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
+                FiveTimeAWeek.BackgroundColor == Color.FromHex("#68ED76"))
+                FiveTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+            else
+            {
+                absence.BackgroundColor = Color.FromHex("#68ED76");
+                TwoTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                ThreeTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                FiveTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
+                FiveTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+            }
+        }
+
+        private async void RegistrationSecond(object sender, System.EventArgs e)
+        {
+            if (username.Text != null)
+                userInfo.Name = username.Text.Trim();
+            if (userheight.Text != null)
+                userInfo.Height = double.Parse(userheight.Text.Trim());
+            if (userweight.Text != null)
+                userInfo.Weight = double.Parse(userweight.Text.Trim());
+            if (male.IsChecked)
+                userInfo.Gender = 0;
+            else if (female.IsChecked)
+                userInfo.Gender = 1;
+            else
+                userInfo.Gender = -1;
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "tempInfo.json");
             var json = JsonSerializer.Serialize(userInfo);
 
             if (File.Exists(path))
                 File.Delete(path);
             File.WriteAllText(path, json);
-            await Navigation.PushModalAsync(new StepOne());
-            return;
+            await Navigation.PushModalAsync(new Registration1());
+        }
+
+        public void InformationLast()
+        {
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "tempInfo.json");
+            if (File.Exists(path))
+            {
+                userInfo = JsonSerializer.Deserialize<UserInformation>(File.ReadAllText(path));
+                if (userInfo.Name != null)
+                    username.Text = userInfo.Name;
+                if (userInfo.Height != 0)
+                    userheight.Text = userInfo.Height.ToString();
+                if (userInfo.Weight != 0)
+                    userweight.Text = userInfo.Weight.ToString();
+                if (userInfo.Gender != -1)
+                {
+                    if (userInfo.Gender == 0)
+                        male.IsChecked = true;
+                    else
+                        female.IsChecked = true;
+                }
+            }
         }
     }
 }

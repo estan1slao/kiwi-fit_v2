@@ -57,24 +57,30 @@
                   RelativeLayout.HeightConstraint="270" RelativeLayout.WidthConstraint ="350">
                 <Button Grid.Row="1" Grid.Column="1" x:Name="absence" Text="Отсутствие" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                         CornerRadius="15" BackgroundColor="#68ED76"
-                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="100"/>
+                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="100"
+                        Clicked="AbsenceClicked"/>
                 <Button Grid.Row="1" Grid.Column="2" x:Name="TwoTimeAWeek" Text="2-3 раза в неделю" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                         CornerRadius="15" BackgroundColor="#68ED76"
-                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="120"/>
+                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="120"
+                        Clicked="TwoTimeAWeekClicked"/>
                 <Button Grid.Row="2" Grid.Column="1" x:Name="ThreeTimeAWeek" Text="3-4 раза в неделю" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                         CornerRadius="15" BackgroundColor="#68ED76"
-                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="100"/>
+                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="100"
+                        Clicked="ThreeTimeAWeekClicked"/>
                 <Button Grid.Row="2" Grid.Column="2" x:Name="FiveTimeAWeek" Text="5 раз в неделю" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                         CornerRadius="15" BackgroundColor="#68ED76"
-                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="120"/>
+                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="120"
+                        Clicked="FiveTimeAWeekClicked"/>
             </Grid>
             <ImageButton x:Name="im14" RelativeLayout.HeightConstraint = "113" RelativeLayout.WidthConstraint ="17" BackgroundColor="#8BF593" 
-                         RelativeLayout.XConstraint="360" RelativeLayout.YConstraint="110"/>
+                         RelativeLayout.XConstraint="360" RelativeLayout.YConstraint="110"
+                         Clicked="RegistrationSecond"/>
         </RelativeLayout>
         <RelativeLayout Margin="55, 650, 0, 0">
             <Button x:Name="sendDataButton" Text = "Начать" FontSize="25" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                     CornerRadius="11" BackgroundColor="#A1A1A1"
-                    RelativeLayout.HeightConstraint = "82" RelativeLayout.WidthConstraint ="282"/>
+                    RelativeLayout.HeightConstraint = "82" RelativeLayout.WidthConstraint ="282"
+                    Clicked="InitializationUser"/>
         </RelativeLayout>
     </Grid>
 </ContentPage>
