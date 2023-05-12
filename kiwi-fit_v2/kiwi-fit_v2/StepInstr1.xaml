@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.StepInstr1">
+    <Grid>
+        <Image x:Name="stepbg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        <Label Text="шаг 1" x:Name="stepNumber" FontSize="24" FontFamily="Ubuntu" TextColor="#68A171" Margin="14, 39, 0, 0"/>
+        <Label Text="1.04.2023 - 8.04.2023" x:Name="week" FontSize="32" FontFamily="Ubuntu" TextColor="#68A171" Margin="14, 74, 0, 0"/>
+
+        <Label Text="Ваш текущий прогресс в шагах и" FontSize="20" FontFamily="Ubuntu" 
+               TextColor="#D3D3D3" Margin="14, 150, 0, 0"/>
+        <Label Text="текущая неделя." FontSize="20" FontFamily="Ubuntu" 
+               TextColor="#D3D3D3" Margin="14, 175, 0, 0"/>
+        <Label Text="Шаги - квесты, выполняя которые," FontSize="20" FontFamily="Ubuntu" 
+               TextColor="#D3D3D3" Margin="14, 220, 0, 0"/>
+        <Label Text="получится взять за привычку" FontSize="20" FontFamily="Ubuntu" 
+               TextColor="#D3D3D3" Margin="14, 245, 0, 0"/>
+        <Label Text="правильное питание." FontSize="20" FontFamily="Ubuntu" 
+               TextColor="#D3D3D3" Margin="14, 270, 0, 0"/>
+        <Label Text="Раз в неделю вам нужно будет" FontSize="20" FontFamily="Ubuntu" 
+               TextColor="#D3D3D3" Margin="14, 315, 0, 0"/>
+        <Label Text="отмечать шаги, которые вам" FontSize="20" FontFamily="Ubuntu" 
+               TextColor="#D3D3D3" Margin="14, 340, 0, 0"/>
+        <Label Text="удалось выполнить." FontSize="20" FontFamily="Ubuntu" 
+               TextColor="#D3D3D3" Margin="14, 365, 0, 0"/>
+        <Line X1= "16"
+              Y1="692"
+              X2="378"
+              Y2="692"
+              Stroke="#707070"/>
+        <RelativeLayout>
+            <ImageButton x:Name="im9" HeightRequest="55" WidthRequest="55" BackgroundColor="#00ffffff"
+                             RelativeLayout.XConstraint="20" RelativeLayout.YConstraint="700"/>
+            <ImageButton x:Name="im10" HeightRequest="55" WidthRequest="55" BackgroundColor="#00ffffff"
+                             RelativeLayout.XConstraint="325" RelativeLayout.YConstraint="700" Clicked = "GoNextPage"/>
+            <Label Text = "пропустить" FontSize="16" TextColor="#C5B7B7" FontFamily="Ubuntu" Margin="16, 750, 0, 0"/>
+            <Label Text = "обучение" FontSize="16" TextColor="#C5B7B7" FontFamily="Ubuntu" Margin="16, 770, 0, 0"/>
+            <Label Text = "следующий" FontSize="16" TextColor="#C5B7B7" FontFamily="Ubuntu" Margin="293, 750, 0, 0"/>
+        </RelativeLayout>
+    </Grid>
+</ContentPage>
