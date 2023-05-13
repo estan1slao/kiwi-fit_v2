@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace User
 {
@@ -16,6 +14,9 @@ namespace User
             public string TextIMT { get; set; }
             public string TextCountOfWater { get; set; }
             public DateTime Date { get; set; }
+            public int Activity { get; set; }
+            public bool IsLoseWeight { get; set; }
+            public bool IsFaster { get; set; }
         }
     }
 }

@@ -20,7 +20,8 @@
         <RelativeLayout>
             <Button x:Name="sendDataButton" Text = "Продолжить" FontSize="25" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                     CornerRadius="11" BackgroundColor="#68ED76"
-                     Margin="55, 631, 0, 0" HeightRequest="82" WidthRequest="282"/>
+                     Margin="55, 631, 0, 0" HeightRequest="82" WidthRequest="282"
+                    Clicked="OnButtonClicked"/>
         </RelativeLayout>
     </Grid>
 </ContentPage>
