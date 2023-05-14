@@ -46,5 +46,15 @@ namespace kiwi_fit_v2
             im21.Source = ImageSource.FromResource("kiwi-fit_v2.im16.png");
             im21.Aspect = Aspect.Fill;
         }
-	}
+
+        private async void GoToUserPage(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new UserPage());
+        }
+
+        private async void GoToTaskOnePage(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new TaskOne());
+        }
+    }
 }

@@ -19,6 +19,7 @@
     <None Remove="im14.png" />
     <None Remove="im15.png" />
     <None Remove="im16.png" />
+    <None Remove="im17.png" />
     <None Remove="im2.png" />
     <None Remove="im3.png" />
     <None Remove="im4.png" />
@@ -43,6 +44,7 @@
     <EmbeddedResource Include="im14.png" />
     <EmbeddedResource Include="im15.png" />
     <EmbeddedResource Include="im16.png" />
+    <EmbeddedResource Include="im17.png" />
     <EmbeddedResource Include="im2.png" />
     <EmbeddedResource Include="im3.png" />
     <EmbeddedResource Include="im4.png" />

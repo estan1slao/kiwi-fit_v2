@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.TaskOne">
+    <ScrollView Orientation="Horizontal">
+        <Grid>
+            <Grid ColumnDefinitions="5" Margin="0, 100, 0, 0">
+                <RelativeLayout Grid.Column="1">
+                    <Image x:Name="im17" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Самый первый шаг, который" Margin="30, 20, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="вам нужно сделать на пути к" Margin="30, 45, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="правильному питанию, это" Margin="30, 70, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="исключить из своего меню так" Margin="30, 95, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="называемый «пищевой мусор»," Margin="30, 120, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Label Text="а именно:" Margin="30, 170, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 205, 0, 0"/>
+                    <Label Text="сахар и сахаросодержащие" Margin="50, 195, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="продукты" Margin="50, 220, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 255, 0, 0"/>
+                    <Label Text="белую выпечку и белые" Margin="50, 245, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="мучные изделия" Margin="50, 270, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 305, 0, 0"/>
+                    <Label Text="колбасу, колбасные изделия," Margin="50, 295, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="мясные полуфабрикаты" Margin="50, 320, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 355, 0, 0"/>
+                    <Label Text="фастфуд (картофель фри," Margin="50, 345, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="гамбургеры, чипсы, снеки и т.д.)" Margin="50, 370, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 405, 0, 0"/>
+                    <Label Text="сладкие соки, газировки и" Margin="50, 395, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="лимонады" Margin="50, 420, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 455, 0, 0"/>
+                    <Label Text="майонез, кетчуп и" Margin="50, 445, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="ненатуральные соусы" Margin="50, 470, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="31" HeightRequest="9" Margin="90, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="130, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="210, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="250, 550, 0, 0"/>
+                    <Button x:Name = "Return"  CornerRadius="40" BackgroundColor="#1B1B1B" Opacity="0.5"
+                            Text="нажмите, чтобы вернуться" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="600"
+                     FontSize="16" FontFamily="Ubuntu" TextColor="#FFFFFF"
+                     RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="350" Clicked="GoToStepPage"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="2">
+                    <Image x:Name="im16" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Это продукты с низкой пищевой" Margin="30, 20, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="ценностью, которые, не несут" Margin="30, 45, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="фактически никакой пользы" Margin="30, 70, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="организму." Margin="30, 95, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="Это высококалорийные" Margin="50, 120, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Label Text="продукты, которые очень быстро" Margin="30, 145, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="откладываются в жир. Большая" Margin="30, 170, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="часть этих продуктов не" Margin="30, 195, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Label Text="насыщает организм, поэтому вы" Margin="30, 220, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="будете постоянно чувствовать" Margin="30, 245, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Label Text="голод и съедать лишнюю норму" Margin="30, 270, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="еды." Margin="30, 295, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Label Text="Очистив свой рацион от этой" Margin="50, 320, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="группы продуктов, вы уже" Margin="30, 345, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="сделаете огромный шаг к" Margin="30, 370, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="правильному питанию и" Margin="30, 395, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="похудению." Margin="30, 420, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="90, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="31" HeightRequest="9" Margin="130, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="210, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="250, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="3">
+                    <Image x:Name="im18" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+
+                    <Label Text="Попробуйте пить" Margin="30, 70, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="рекомендуемую суточную" Margin="30, 95, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="норму воды(смотреть в" Margin="30, 120, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Label Text="профиле)." Margin="30, 145, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="Первое время" Margin="30, 170, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="вам будет казаться, что" Margin="30, 195, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Label Text="такое количество воды" Margin="30, 220, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="нереально выпить за день," Margin="30, 245, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Label Text="но постепенно вы сможете" Margin="30, 270, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="еды." Margin="30, 295, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Label Text="сделать это своей" Margin="30, 320, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="полезной привычкой." Margin="30, 345, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="90, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="130, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="31" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="210, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="250, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="4">
+                    <Image x:Name="im19" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label 
+                        Text="Во-первых, вода участвует практически во всех биохимических процессах в организме, в том числе и в расщеплении жира. Во-вторых, вода подавляет аппетит и не позволяет съесть лишнего. Старайтесь всегда держать при себе бутылочку воды (на работе и дома)." 
+                        Margin="30,100, 0, 0"
+                        FontSize="20" FontFamily="Ubuntu" TextColor="#000000" RelativeLayout.WidthConstraint="317"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="90, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="130, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="31" HeightRequest="9" Margin="210, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="250, 550, 0, 0"/>
+                </RelativeLayout>
+                <RelativeLayout Grid.Column="5">
+                    <Image x:Name="im20" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Помните, что в первые месяцы перехода на правильное питание вы наиболее уязвимы. Пищевые привычки еще не устаканились и риск срыва очень высок, поэтому лучше избегать продуктов - провокаторов, которые «расхолаживают» и расслабляют." 
+                           Margin="30, 100, 0, 0" FontSize="20" FontFamily="Ubuntu" TextColor="#000000" RelativeLayout.WidthConstraint="317"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="90, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="130, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="31" HeightRequest="9" Margin="210, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="31" HeightRequest="9" Margin="250, 550, 0, 0"/>
+                </RelativeLayout>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

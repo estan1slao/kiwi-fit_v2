@@ -105,7 +105,7 @@
             <Frame CornerRadius="35" BackgroundColor="#D9FFDC" 
                        RelativeLayout.HeightConstraint="67" RelativeLayout.WidthConstraint="234"/>
             <ImageButton x:Name="im6" HeightRequest="32" WidthRequest="33" BackgroundColor="#D9FFDC"
-                             RelativeLayout.XConstraint="35" RelativeLayout.YConstraint="16"/>
+                             RelativeLayout.XConstraint="35" RelativeLayout.YConstraint="16" Clicked="GoToStepPage"/>
             <ImageButton x:Name="im7" HeightRequest="50" WidthRequest="60" BackgroundColor="#D9FFDC"
                             RelativeLayout.XConstraint="85" RelativeLayout.YConstraint="6"/>
             <ImageButton x:Name="im8" HeightRequest="35" WidthRequest="35" BackgroundColor="#D9FFDC" 

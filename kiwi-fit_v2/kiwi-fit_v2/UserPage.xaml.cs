@@ -61,5 +61,10 @@ namespace kiwi_fit_v2
             Initialization();
             #endregion
         }
+
+        private async void GoToStepPage(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new WeekOne());
+        }
     }
 }
