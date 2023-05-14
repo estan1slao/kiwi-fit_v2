@@ -23,7 +23,7 @@
                     <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="290, 550, 0, 0"/>
                     <Button x:Name = "Return"  CornerRadius="40" BackgroundColor="#1B1B1B" Opacity="0.5"
                             Text="нажмите, чтобы вернуться" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="600"
-                     FontSize="16" FontFamily="Ubuntu" TextColor="#FFFFFF"
+                     FontSize="16" FontFamily="Ubuntu" TextColor="#FFFFFF" Clicked = "GoToStepPage"
                      RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="350"/>
                 </RelativeLayout>
 

@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace kiwi_fit_v2
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-public partial class WeekTwo : ContentPage
-{
-    public WeekTwo()
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class WeekTwo : ContentPage
     {
-        InitializeComponent();
+        public WeekTwo()
+        {
+            InitializeComponent();
 
             im6.Source = ImageSource.FromResource("kiwi-fit_v2.im6.png");
             im6.Aspect = Aspect.Fill;
@@ -42,7 +36,7 @@ public partial class WeekTwo : ContentPage
 
             im21.Source = ImageSource.FromResource("kiwi-fit_v2.im16.png");
             im21.Aspect = Aspect.Fill;
-    }
+        }
 
         private async void GoToUserPage(object sender, System.EventArgs e)
         {

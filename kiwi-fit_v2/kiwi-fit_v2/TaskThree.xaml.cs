@@ -4,9 +4,9 @@ using Xamarin.Forms.Xaml;
 namespace kiwi_fit_v2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TaskTwo : ContentPage
+    public partial class TaskThree : ContentPage
     {
-        public TaskTwo()
+        public TaskThree()
         {
             InitializeComponent();
             im7.Source = ImageSource.FromResource("kiwi-fit_v2.im17.png");
@@ -17,9 +17,6 @@ namespace kiwi_fit_v2
 
             im9.Source = ImageSource.FromResource("kiwi-fit_v2.im17.png");
             im9.Aspect = Aspect.Fill;
-
-            im15.Source = ImageSource.FromResource("kiwi-fit_v2.im17.png");
-            im15.Aspect = Aspect.Fill;
 
             im16.Source = ImageSource.FromResource("kiwi-fit_v2.im17.png");
             im16.Aspect = Aspect.Fill;
