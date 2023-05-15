@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.WeekFour">
+    <ScrollView>
+        <Grid>
+            <Image x:Name="im15" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Label Text="шаг 1" x:Name="stepNumber" FontSize="24" FontFamily="Ubuntu" TextColor="#535353" Margin="14, 30, 0, 0"/>
+            <Label Text="15.05.2023 - 21.05.2023" x:Name="week" FontSize="32" FontFamily="Ubuntu" TextColor="#535353" Margin="14, 56, 0, 0"/>
+            <Grid RowDefinitions="7" Margin="12, 140, 0, 0">
+                <RelativeLayout Grid.Row="1">
+                    <Button x:Name = "Task" CornerRadius="40" BackgroundColor="#D9FFDC" Text="Исключить алкоголь. Убрать “пищевой” мусор. Наладить питьевой режим" 
+                     FontSize="16" FontFamily="Ubuntu" TextColor="#535353" Clicked="GoToTaskOnePage"
+                     RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="370"/>
+                </RelativeLayout>
+                <RelativeLayout Grid.Row="2" Margin="0, -23, 0, 0">
+                    <Button x:Name = "TaskTwo" CornerRadius="40" BackgroundColor="#D9FFDC" Text="Наладить режим питания. Настроиться на смену образа жизни." 
+                     FontSize="16" FontFamily="Ubuntu" TextColor="#535353" Clicked="GoToTaskTwoPage"
+                     RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="370"/>
+                </RelativeLayout>
+                <RelativeLayout Grid.Row="3" Margin="0, -43, 0, 0">
+                    <Button x:Name = "TaskThree" CornerRadius="40" BackgroundColor="#D9FFDC" Text="Потреблять сложные углеводы. Изменить подход к процессу приготовления пищи." 
+                     FontSize="15" FontFamily="Ubuntu" TextColor="#535353" Clicked="GoToTaskThreePage"
+                     RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="370"/>
+                </RelativeLayout>
+                <RelativeLayout Grid.Row="4" Margin="0, -63, 0, 0">
+                    <Button x:Name = "TaskFour" CornerRadius="40" BackgroundColor="#D9FFDC" Text="Потреблять сложные углеводы. Изменить подход к процессу приготовления пищи." 
+                     FontSize="15" FontFamily="Ubuntu" TextColor="#535353" Clicked="GoToTaskFourPage"
+                     RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="370"/>
+                </RelativeLayout>
+                <RelativeLayout Grid.Row="5" Margin="0, -83, 0, 0">
+                    <Frame  BackgroundColor="#3A6A3A" CornerRadius="40" RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="370"/>
+                    <Image x:Name="im19" RelativeLayout.HeightConstraint="69" RelativeLayout.WidthConstraint="62" 
+                           RelativeLayout.XConstraint="153" RelativeLayout.YConstraint="3"/>
+                </RelativeLayout>
+                <RelativeLayout Grid.Row="6" Margin="0, -103, 0, 0">
+                    <Frame  BackgroundColor="#3A6A3A" CornerRadius="40" RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="370"/>
+                    <Image x:Name="im20" RelativeLayout.HeightConstraint="69" RelativeLayout.WidthConstraint="62" 
+                           RelativeLayout.XConstraint="153" RelativeLayout.YConstraint="3"/>
+                </RelativeLayout>
+                <RelativeLayout Grid.Row="7" Margin="0, -123, 0, 0">
+                    <Frame  BackgroundColor="#3A6A3A" CornerRadius="40" RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="370"/>
+                    <Image x:Name="im21" RelativeLayout.HeightConstraint="69" RelativeLayout.WidthConstraint="62" 
+                           RelativeLayout.XConstraint="153" RelativeLayout.YConstraint="3"/>
+                </RelativeLayout>
+            </Grid>
+            <RelativeLayout Margin="0, 900, 0, 0" HorizontalOptions="Center">
+                <Frame CornerRadius="35" BackgroundColor="#D9FFDC" 
+                       RelativeLayout.HeightConstraint="67" RelativeLayout.WidthConstraint="234"/>
+                <ImageButton x:Name="im6" HeightRequest="32" WidthRequest="33" BackgroundColor="#D9FFDC"
+                             RelativeLayout.XConstraint="35" RelativeLayout.YConstraint="16"/>
+                <ImageButton x:Name="im7" HeightRequest="50" WidthRequest="60" BackgroundColor="#D9FFDC"
+                            RelativeLayout.XConstraint="85" RelativeLayout.YConstraint="6" Clicked="GoToUserPage"/>
+                <ImageButton x:Name="im8" HeightRequest="35" WidthRequest="35" BackgroundColor="#D9FFDC" 
+                         RelativeLayout.XConstraint="165" RelativeLayout.YConstraint="13"/>
+            </RelativeLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

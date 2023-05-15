@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.TaskFour">
+    <ScrollView Orientation="Horizontal">
+        <Grid>
+            <Grid ColumnDefinitions="4" Margin="0, 100, 0, 0">
+                <RelativeLayout Grid.Column="1">
+                    <Image x:Name="im17" Margin="-15, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Более подробно о меню и КБЖУ будет рассказано в следующих шагах. Сейчас же давайте запомним несколько важных правил, которые помогут вам грамотно распределить продукты в течение дня так, чтобы это было полезно для организма и эффективно с точки зрения похудения. исключать углеводы из рациона или сильно уменьшать их количество." 
+                     Margin="30, 60, 0, 0" WidthRequest="325"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="(Рекомендуется потреблять калории, белки, жиры и углеводы в соответствии с тем, что написано в профиле)" 
+                     Margin="30, 400, 0, 0" WidthRequest="325"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="32" HeightRequest="9" Margin="100, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="140, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="180, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="220, 550, 0, 0"/>
+                    <Button x:Name = "Return"  CornerRadius="40" BackgroundColor="#1B1B1B" Opacity="0.5"
+                            Text="нажмите, чтобы вернуться" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="600"
+                     FontSize="16" FontFamily="Ubuntu" TextColor="#FFFFFF"
+                     RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="350"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="2">
+                    <Image x:Name="im16" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="ПРАВИЛА МЕНЮ НА ПП:" Margin="30, 100, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="1. Наиболее оптимальный вариант завтрака – это сложные углеводы (+ немного белка). Поэтому начните приучать себя к утренним кашам." 
+                     Margin="30, 140, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="2. В обед также нужны сложные углеводы + белок + немного овощей. В принципе стандартным вариантом будет гарнир с мясом или рыбой и овощной салат (либо тушеные овощи)." 
+                     Margin="30, 270, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="100, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="32" HeightRequest="9" Margin="140, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="180, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="220, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="3">
+                    <Image x:Name="im18" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+
+                    <Label Text="3. В качестве идеального ужина будет птица или рыба (можно яйца) + овощи (свежие или приготовленные)." 
+                     Margin="30, 120, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="4. Простое правило: с утра к вечеру нужно уменьшать количество потребляемых углеводов и увеличивать количество потребляемых белков.То есть в начале дня организму нужны углеводы для энергии, в конце дня – белки для регенерирующих процессов, которые проходят ночью в организме." 
+                     Margin="30, 230, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="100, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="140, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="32" HeightRequest="9" Margin="180, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="220, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="4">
+                    <Image x:Name="im19" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="5. Лучше не употребляйте быстрые углеводы и фрукты после 16:00 (или во второй половине дня, если у вас нестандартное расписание). Исключение можно сделать для зеленых яблок." 
+                     Margin="30, 20, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="6. Между приемами пищи у вас должны быть перекусы. Здесь нет строгих рамок по продуктам, но желательно, чтобы они включали в себя и белки, и углеводы."
+                     Margin="30, 190, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Label Text="7. После ужина можно сделать перекус за час до сна, чтобы не почувствовать внезапный приступ голода, когда ляжете спать. Идеальный вариант – это кефир или творог. Лучше не есть на ночь продукты с высоким содержанием жиров или углеводов." 
+                     Margin="30, 340, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="100, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="140, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="32" HeightRequest="9" Margin="180, 560, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="32" HeightRequest="9" Margin="220, 560, 0, 0"/>
+                </RelativeLayout>
+
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>
