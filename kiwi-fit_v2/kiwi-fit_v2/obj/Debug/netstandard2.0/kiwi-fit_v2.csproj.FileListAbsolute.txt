@@ -58,3 +58,11 @@ C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\net
 C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StepInstr3.xaml.g.cs
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\TaskOne.xaml.g.cs
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\WeekOne.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\TaskFour.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\TaskOne.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\TaskThree.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\TaskTwo.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\WeekFour.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\WeekOne.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\WeekThree.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\WeekTwo.xaml.g.cs

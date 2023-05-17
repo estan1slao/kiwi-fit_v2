@@ -7,6 +7,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 using static User.User;
 
@@ -30,12 +31,17 @@ namespace kiwi_fit_v2
             userInfo.IsLoseWeight = false;
             if (gainWeightButton.BackgroundColor == Color.FromHex("#8EEF96") &&
                 loseWeightButton.BackgroundColor == Color.FromHex("#8EEF96"))
+            {
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
                 gainWeightButton.BackgroundColor = Color.FromHex("#2B6130");
+            }
+                
             else
             {
                 gainWeightButton.BackgroundColor = Color.FromHex("#8EEF96");
                 loseWeightButton.BackgroundColor = Color.FromHex("#8EEF96");
                 gainWeightButton.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
             }
         }
 
@@ -45,12 +51,15 @@ namespace kiwi_fit_v2
             userInfo.IsLoseWeight = true;
             if (gainWeightButton.BackgroundColor == Color.FromHex("#8EEF96") &&
                 loseWeightButton.BackgroundColor == Color.FromHex("#8EEF96"))
+            {
                 loseWeightButton.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
+            }
             else
             {
                 gainWeightButton.BackgroundColor = Color.FromHex("#8EEF96");
                 loseWeightButton.BackgroundColor = Color.FromHex("#8EEF96");
-                loseWeightButton.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
             }
         }
 

@@ -67,7 +67,7 @@ namespace kiwi_fit_v2
             if (File.Exists(path))
                 File.Delete(path);
             File.WriteAllText(path, json);
-            await Navigation.PushModalAsync(new Registration());
+            await Navigation.PushModalAsync(new Registration(),false);
         }
 
         private void EveryDayClicked(object sender, System.EventArgs e)
@@ -77,13 +77,18 @@ namespace kiwi_fit_v2
             if (everyDay.BackgroundColor == Color.FromHex("#68ED76") &&
                 EveryDayAndJob.BackgroundColor == Color.FromHex("#68ED76") &&
                 TwoInDay.BackgroundColor == Color.FromHex("#68ED76"))
+            {
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
                 everyDay.BackgroundColor = Color.FromHex("#2B6130");
+            }
+                
             else
             {
                 everyDay.BackgroundColor = Color.FromHex("#68ED76");
                 EveryDayAndJob.BackgroundColor = Color.FromHex("#68ED76");
                 TwoInDay.BackgroundColor = Color.FromHex("#68ED76");
                 everyDay.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
             }
         }
 
@@ -94,13 +99,17 @@ namespace kiwi_fit_v2
             if (everyDay.BackgroundColor == Color.FromHex("#68ED76") &&
                 EveryDayAndJob.BackgroundColor == Color.FromHex("#68ED76") &&
                 TwoInDay.BackgroundColor == Color.FromHex("#68ED76"))
+            {
                 EveryDayAndJob.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
+            }
             else
             {
                 everyDay.BackgroundColor = Color.FromHex("#68ED76");
                 EveryDayAndJob.BackgroundColor = Color.FromHex("#68ED76");
                 TwoInDay.BackgroundColor = Color.FromHex("#68ED76");
                 EveryDayAndJob.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
             }
         }
 
@@ -111,13 +120,17 @@ namespace kiwi_fit_v2
             if (everyDay.BackgroundColor == Color.FromHex("#68ED76") &&
                 EveryDayAndJob.BackgroundColor == Color.FromHex("#68ED76") &&
                 TwoInDay.BackgroundColor == Color.FromHex("#68ED76"))
+            {
                 TwoInDay.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
+            }
             else
             {
                 everyDay.BackgroundColor = Color.FromHex("#68ED76");
                 EveryDayAndJob.BackgroundColor = Color.FromHex("#68ED76");
                 TwoInDay.BackgroundColor = Color.FromHex("#68ED76");
                 TwoInDay.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
             }
         }
 

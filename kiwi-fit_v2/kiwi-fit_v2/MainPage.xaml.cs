@@ -20,6 +20,9 @@ namespace kiwi_fit_v2
                 Navigation.PushModalAsync(new UserPage());
                 return;
             }
+            path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "tempInfo.json");
+            if(File.Exists(path))
+                File.Delete(path);
             InitializeComponent();
             loadingPicture.Source = ImageSource.FromResource("kiwi-fit_v2.startpicture.png");
             loadingPicture.Aspect = Aspect.Fill;

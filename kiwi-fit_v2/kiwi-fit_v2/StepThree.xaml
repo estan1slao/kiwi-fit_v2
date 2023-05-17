@@ -18,12 +18,12 @@
             </Grid.RowDefinitions>
             <Label Text="Каллории" Grid.Column="1" Grid.Row="1" FontSize="16" FontFamily="Ubuntu"
                    TextColor="#535353" Opacity="0.8" HorizontalOptions="Center"/>
-            <Label x:Name="Calories" Text="1111" Grid.Column="1" Grid.Row="2" FontSize="16" TextColor="#535353" 
+            <Label x:Name="Calories" Text="2702" Grid.Column="1" Grid.Row="2" FontSize="16" TextColor="#535353" 
                    Opacity="0.8" HorizontalOptions="Center" FontFamily="Ubuntu"/>
 
             <Label Text="Белки" Grid.Column="2" Grid.Row="1" FontSize="16" TextColor="#535353" FontFamily="Ubuntu"
                    Opacity="0.8" HorizontalOptions="Center"/>
-            <Label x:Name="Proteins" Text="34" Grid.Column="2" Grid.Row="2" FontSize="16" TextColor="#535353" FontFamily="Ubuntu"
+            <Label x:Name="Proteins" Text="203" Grid.Column="2" Grid.Row="2" FontSize="16" TextColor="#535353" FontFamily="Ubuntu"
                    Opacity="0.8" HorizontalOptions="Center"/>
 
             <Label Text="Жиры" Grid.Column="3" Grid.Row="1" FontSize="16" FontFamily="Ubuntu"
@@ -33,7 +33,7 @@
 
             <Label Text="Углеводы" Grid.Column="4" Grid.Row="1" FontSize="16" TextColor="#535353" FontFamily="Ubuntu"
                    Opacity="0.8" HorizontalOptions="Center"/>
-            <Label x:Name="Carbo" Text="70" Grid.Column="4" Grid.Row="2" FontSize="16" TextColor="#535353" FontFamily="Ubuntu"
+            <Label x:Name="Carbo" Text="338" Grid.Column="4" Grid.Row="2" FontSize="16" TextColor="#535353" FontFamily="Ubuntu"
                    Opacity="0.8" HorizontalOptions="Center"/>
         </Grid>
 

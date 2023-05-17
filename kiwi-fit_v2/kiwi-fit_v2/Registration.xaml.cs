@@ -81,11 +81,14 @@ namespace kiwi_fit_v2
         {
             activitySelected = true;
             userInfo.Activity = 0;
-            if (absence.BackgroundColor == Color.FromHex("#68ED76") && 
+            if (absence.BackgroundColor == Color.FromHex("#68ED76") &&
                 TwoTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
                 ThreeTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
                 FiveTimeAWeek.BackgroundColor == Color.FromHex("#68ED76"))
+            {
                 absence.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
+            }
             else
             {
                 absence.BackgroundColor = Color.FromHex("#68ED76");
@@ -93,6 +96,7 @@ namespace kiwi_fit_v2
                 ThreeTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
                 FiveTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
                 absence.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
             }
         }
 
@@ -104,7 +108,11 @@ namespace kiwi_fit_v2
                 TwoTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
                 ThreeTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
                 FiveTimeAWeek.BackgroundColor == Color.FromHex("#68ED76"))
+            {
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
                 TwoTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+            }
+                
             else
             {
                 absence.BackgroundColor = Color.FromHex("#68ED76");
@@ -112,6 +120,7 @@ namespace kiwi_fit_v2
                 ThreeTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
                 FiveTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
                 TwoTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
             }
         }
 
@@ -123,7 +132,10 @@ namespace kiwi_fit_v2
                 TwoTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
                 ThreeTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
                 FiveTimeAWeek.BackgroundColor == Color.FromHex("#68ED76"))
+            {
                 ThreeTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
+            }
             else
             {
                 absence.BackgroundColor = Color.FromHex("#68ED76");
@@ -131,6 +143,7 @@ namespace kiwi_fit_v2
                 ThreeTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
                 FiveTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
                 ThreeTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
             }
         }
 
@@ -142,7 +155,10 @@ namespace kiwi_fit_v2
                 TwoTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
                 ThreeTimeAWeek.BackgroundColor == Color.FromHex("#68ED76") &&
                 FiveTimeAWeek.BackgroundColor == Color.FromHex("#68ED76"))
+            {
                 FiveTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
+            }
             else
             {
                 absence.BackgroundColor = Color.FromHex("#68ED76");
@@ -150,6 +166,7 @@ namespace kiwi_fit_v2
                 ThreeTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
                 FiveTimeAWeek.BackgroundColor = Color.FromHex("#68ED76");
                 FiveTimeAWeek.BackgroundColor = Color.FromHex("#2B6130");
+                sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
             }
         }
 
@@ -173,7 +190,7 @@ namespace kiwi_fit_v2
             if (File.Exists(path))
                 File.Delete(path);
             File.WriteAllText(path, json);
-            await Navigation.PushModalAsync(new Registration1());
+            await Navigation.PushModalAsync(new Registration1(),false);
         }
 
         public void InformationLast()
