@@ -7,7 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-[assembly: ExportFont("Ubuntu-Bold.ttf", Alias = "Ubuntu")]
+[assembly: ExportFont("Ubuntu-Light.ttf", Alias = "Ubuntu")]
+[assembly: ExportFont("Ubuntu-Bold.ttf", Alias = "Ubuntu-Bold")]
+[assembly: ExportFont("Ubuntu-Regular.ttf", Alias = "Ubuntu-Regular")]
 namespace kiwi_fit_v2
 {  
     public partial class MainPage : ContentPage

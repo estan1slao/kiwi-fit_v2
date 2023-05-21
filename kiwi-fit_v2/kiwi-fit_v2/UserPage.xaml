@@ -5,7 +5,7 @@
 
     <Grid>
         <Image x:Name="userPageBackground" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-        <Label x:Name ="username" Text="Ростислав" TextColor="#535353" FontSize="36" Padding="14, 49, 0, 0" FontFamily="Ubuntu"/>
+        <Label x:Name ="username" Text="Ростислав" TextColor="#535353" FontSize="36" Padding="14, 49, 0, 0" FontFamily="Ubuntu-Regular"/>
         <Grid Margin="0, 100, 0, 0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10" />
@@ -77,7 +77,7 @@
         </Grid>
         <RelativeLayout>
             <ImageButton x:Name="im3" HeightRequest = "25" WidthRequest = "30" BackgroundColor = "#D9FFDC"
-                             RelativeLayout.XConstraint = "320" RelativeLayout.YConstraint = "280"/>
+                             RelativeLayout.XConstraint = "320" RelativeLayout.YConstraint = "280" Clicked="GoToChangePage"/>
         </RelativeLayout>
         <Grid Margin ="29, 478, 0, 0">
             <Grid.ColumnDefinitions>
@@ -97,8 +97,8 @@
                 <Frame Grid.Row="2" CornerRadius="17" BackgroundColor="#D9FFDC"
                        RelativeLayout.HeightConstraint="142" RelativeLayout.WidthConstraint="129"/>
                 <Label Text="посмотреть статистику" FontSize="20" Padding="10, 10, 0, 0" FontFamily="Ubuntu"/>
-                <ImageButton x:Name="im5" HeightRequest="68" WidthRequest="113" BackgroundColor="#D9FFDC"
-                             RelativeLayout.XConstraint="340" RelativeLayout.YConstraint="71"/>
+                <ImageButton x:Name="im5" HeightRequest="68" WidthRequest="77" BackgroundColor="#D9FFDC"
+                             RelativeLayout.XConstraint="25" RelativeLayout.YConstraint="71" Clicked="GoToStatisticPage"/>
             </RelativeLayout>
         </Grid>
         <RelativeLayout Margin="0, 709, 0, 0" HorizontalOptions="Center">

@@ -66,5 +66,15 @@ namespace kiwi_fit_v2
         {
             await Navigation.PushModalAsync(new WeekOne());
         }
+
+        private async void GoToStatisticPage(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new StatisticPage());
+        }
+
+        private async void GoToChangePage(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ChangePageOne());
+        }
     }
 }
