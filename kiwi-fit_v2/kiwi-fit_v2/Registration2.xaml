@@ -29,7 +29,7 @@
         </StackLayout>
 
         <RelativeLayout Margin="55, 594, 0, 0">
-            <Button x:Name="sendDataButton" Text = "Продолжить" FontSize="25" FontFamily="Ubuntu" TextColor="#3F3F3F" 
+            <Button x:Name="sendDataButton" Text = "Продолжить" FontSize="25" FontFamily="Ubuntu-Bold" TextColor="#3F3F3F" 
                     CornerRadius="11" BackgroundColor="#A1A1A1" Clicked="EndRegistration"
                     RelativeLayout.HeightConstraint = "82" RelativeLayout.WidthConstraint ="282"/>
         </RelativeLayout>

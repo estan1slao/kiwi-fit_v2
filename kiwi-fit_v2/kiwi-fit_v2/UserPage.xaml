@@ -5,7 +5,7 @@
 
     <Grid>
         <Image x:Name="userPageBackground" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-        <Label x:Name ="username" Text="Ростислав" TextColor="#535353" FontSize="36" Padding="14, 49, 0, 0" FontFamily="Ubuntu-Regular"/>
+        <Label x:Name ="username" Text="Ростислав" TextColor="#535353" FontSize="36" Padding="14, 49, 0, 0" FontFamily="Ubuntu-Regular1"/>
         <Grid Margin="0, 100, 0, 0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10" />
@@ -109,7 +109,8 @@
             <ImageButton x:Name="im7" HeightRequest="50" WidthRequest="60" BackgroundColor="#D9FFDC"
                             RelativeLayout.XConstraint="85" RelativeLayout.YConstraint="6"/>
             <ImageButton x:Name="im8" HeightRequest="35" WidthRequest="35" BackgroundColor="#D9FFDC" 
-                         RelativeLayout.XConstraint="165" RelativeLayout.YConstraint="13"/>
+                         RelativeLayout.XConstraint="165" RelativeLayout.YConstraint="13" Clicked="GoToFoodPage"/>
+            <Path Data="M0 1H13H26" Stroke="#2B6130" Margin="102, 50, 0, 0"/>
         </RelativeLayout>
     </Grid>
 </ContentPage>

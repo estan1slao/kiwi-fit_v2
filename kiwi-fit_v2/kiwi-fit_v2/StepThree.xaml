@@ -4,7 +4,7 @@
              x:Class="kiwi_fit_v2.StepThree">
     <Grid>
         <Image x:Name="userPageBackground" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-        <Label x:Name ="username" Text="Ростислав" TextColor="#535353" FontSize="36" Padding="14, 49, 0, 0" FontFamily="Ubuntu"/>
+        <Label x:Name ="username" Text="Ростислав" TextColor="#535353" FontSize="36" Padding="14, 49, 0, 0" FontFamily="Ubuntu-Regular"/>
         <Grid Margin="0, 100, 0, 0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10" />

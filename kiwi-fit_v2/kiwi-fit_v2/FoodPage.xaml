@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.FoodPage">
+    <Grid>
+        <Image x:Name="foodPageBackground" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        <RelativeLayout  Margin="25, 147, 0, 0">
+            <Path Data="M0.5 0.5H316C334.887 0.5 350.229 15.6767 350.496 34.5H0.5V0.5Z" Stroke="Black"/>
+            <Entry x:Name="findFood" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="303"/>
+            <Label Text="Поиск..." FontSize="20" FontFamily="Ubuntu" TextColor="#2B6130" 
+                               Margin="20, 3, 0, 0" Opacity="0.5"/>
+            <Path Data="M0.5 0.5V34.5" Stroke="black" Margin="300, 0, 0, 0"/>
+            <ImageButton x:Name="im18" HeightRequest="55" WidthRequest="55" BackgroundColor="#0000"
+            RelativeLayout.HeightConstraint="24" RelativeLayout.WidthConstraint="24" Padding="305, 5, 0, 0"/>
+        </RelativeLayout>
+        <CollectionView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                        SelectionMode="None" ItemsSource="{Binding MyFood}" Margin="14, 215, 0, 0">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="13"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <RelativeLayout>
+                        <Frame CornerRadius="35" BackgroundColor="#D9FFDC" 
+                       RelativeLayout.HeightConstraint="150" RelativeLayout.WidthConstraint="367"/>
+                        <Image Source="{Binding Picture}" Aspect="Fill"/>
+                        <Label Text = "{Binding Name}" FontSize="20" FontFamily="Ubuntu" TextColor="#463737" 
+                               Margin="173, 15, 0, 0"/>
+                        <Grid ColumnDefinitions="4" RowDefinitions="2" Margin="173, 50, 0, 0">
+                            <Label Grid.Row="1" Grid.Column="1" Text="K" FontSize="20" FontFamily="Ubuntu" TextColor="#463737" 
+                               />
+                            <Label Grid.Row="2" Grid.Column="1" Text="1" x:Name="{Binding Calories}" FontSize="20" FontFamily="Ubuntu-Bold" TextColor="#463737" 
+                              />
+
+                            <Label Grid.Row="1" Grid.Column="2"  Text="Б" FontSize="20" FontFamily="Ubuntu" TextColor="#463737" 
+                               />
+                            <Label Grid.Row="2" Grid.Column="2"  Text = "{Binding Proteins}" FontSize="20" FontFamily="Ubuntu-Bold" TextColor="#463737"
+                               />
+
+                            <Label Grid.Row="1" Grid.Column="3" Text="Ж" FontSize="20" FontFamily="Ubuntu" TextColor="#463737" 
+                               />
+                            <Label Grid.Row="2" Grid.Column="3" Text="{Binding Fats}" FontSize="20" FontFamily="Ubuntu-Bold" TextColor="#463737"
+                               />
+
+                            <Label Grid.Row="1" Grid.Column="4" Text="У" FontSize="20" FontFamily="Ubuntu" TextColor="#463737" 
+                               />
+                            <Label Grid.Row="2" Grid.Column="4" Text="{Binding Carb}" FontSize="20" FontFamily="Ubuntu-Bold" TextColor="#463737"
+                               />
+                        </Grid>
+                    </RelativeLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <RelativeLayout Margin="0, 709, 0, 0" HorizontalOptions="Center">
+            <Frame CornerRadius="35" BackgroundColor="#D9FFDC" BorderColor="#000000"
+                       RelativeLayout.HeightConstraint="67" RelativeLayout.WidthConstraint="234"/>
+            <ImageButton x:Name="im6" HeightRequest="32" WidthRequest="33" BackgroundColor="#D9FFDC"
+                             RelativeLayout.XConstraint="35" RelativeLayout.YConstraint="16" Clicked="GoToChangePage"/>
+            <ImageButton x:Name="im7" HeightRequest="50" WidthRequest="60" BackgroundColor="#D9FFDC"
+                            RelativeLayout.XConstraint="85" RelativeLayout.YConstraint="6" Clicked="GoToUserPage"/>
+            <ImageButton x:Name="im8" HeightRequest="35" WidthRequest="35" BackgroundColor="#D9FFDC" 
+                         RelativeLayout.XConstraint="165" RelativeLayout.YConstraint="13"/>
+            <Path Data="M0 1H13H26" Stroke="#2B6130" Margin="170, 50, 0, 0"/>
+        </RelativeLayout>
+    </Grid>
+</ContentPage>

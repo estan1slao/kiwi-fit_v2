@@ -76,5 +76,10 @@ namespace kiwi_fit_v2
         {
             await Navigation.PushModalAsync(new ChangePageOne());
         }
+
+        private async void GoToFoodPage(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new FoodPage());
+        }
     }
 }

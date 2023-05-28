@@ -6,7 +6,7 @@
         <Grid>
             <Image x:Name="im15" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
             <Label Text="шаг 1" x:Name="stepNumber" FontSize="24" FontFamily="Ubuntu" TextColor="#535353" Margin="14, 30, 0, 0"/>
-            <Label Text="15.05.2023 - 21.05.2023" x:Name="week" FontSize="32" FontFamily="Ubuntu" TextColor="#535353" Margin="14, 56, 0, 0"/>
+            <Label Text="15.05.2023 - 21.05.2023" x:Name="week" FontSize="32" FontFamily="Ubuntu-Regular" TextColor="#535353" Margin="14, 56, 0, 0"/>
             <Grid RowDefinitions="7" Margin="12, 140, 0, 0">
                 <RelativeLayout Grid.Row="1">
                     <Button x:Name = "Task" CornerRadius="40" BackgroundColor="#D9FFDC" Text="Исключить алкоголь. Убрать “пищевой” мусор. Наладить питьевой режим" 
@@ -53,6 +53,7 @@
                             RelativeLayout.XConstraint="85" RelativeLayout.YConstraint="6" Clicked="GoToUserPage"/>
                 <ImageButton x:Name="im8" HeightRequest="35" WidthRequest="35" BackgroundColor="#D9FFDC" 
                          RelativeLayout.XConstraint="165" RelativeLayout.YConstraint="13"/>
+                <Path Data="M0 1H13H26" Stroke="#2B6130" Margin="36, 52, 0, 0"/>
             </RelativeLayout>
         </Grid>
     </ScrollView>

@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <None Remove="background.png" />
+    <None Remove="food.png" />
     <None Remove="im1.png" />
     <None Remove="im10.png" />
     <None Remove="im11.png" />
@@ -20,6 +21,7 @@
     <None Remove="im15.png" />
     <None Remove="im16.png" />
     <None Remove="im17.png" />
+    <None Remove="im18.png" />
     <None Remove="im2.png" />
     <None Remove="im3.png" />
     <None Remove="im4.png" />
@@ -28,6 +30,7 @@
     <None Remove="im7.png" />
     <None Remove="im8.png" />
     <None Remove="im9.png" />
+    <None Remove="kiwi.png" />
     <None Remove="menu.png" />
     <None Remove="startpicture.png" />
     <None Remove="step2bg.png" />
@@ -38,6 +41,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="background.png" />
+    <EmbeddedResource Include="food.png" />
     <EmbeddedResource Include="im1.png" />
     <EmbeddedResource Include="im10.png" />
     <EmbeddedResource Include="im12.png" />
@@ -45,6 +49,7 @@
     <EmbeddedResource Include="im15.png" />
     <EmbeddedResource Include="im16.png" />
     <EmbeddedResource Include="im17.png" />
+    <EmbeddedResource Include="im18.png" />
     <EmbeddedResource Include="im2.png" />
     <EmbeddedResource Include="im3.png" />
     <EmbeddedResource Include="im4.png" />
@@ -53,6 +58,7 @@
     <EmbeddedResource Include="im7.png" />
     <EmbeddedResource Include="im8.png" />
     <EmbeddedResource Include="im9.png" />
+    <EmbeddedResource Include="kiwi.png" />
     <EmbeddedResource Include="menu.png" />
     <EmbeddedResource Include="startpicture.png" />
     <EmbeddedResource Include="step2bg.png" />
@@ -83,6 +89,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ChangePageTwo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FoodPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Registration.xaml">
