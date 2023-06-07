@@ -1,21 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static User.User;
 
 namespace kiwi_fit_v2
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ChangePageOne : ContentPage
 	{
-		public ChangePageOne ()
+        public bool activitySelected = false;
+        public UserInformation userInfo = new UserInformation();
+        public ChangePageOne ()
 		{
-            # region front-end
+            #region front-end
             InitializeComponent();
+
             userPageBackground.Source = ImageSource.FromResource("kiwi-fit_v2.userbg.png");
             userPageBackground.Aspect = Aspect.Fill;
             im6.Source = ImageSource.FromResource("kiwi-fit_v2.im6.png");

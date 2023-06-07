@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static User.User;
 
 namespace kiwi_fit_v2
 {
@@ -16,6 +19,7 @@ namespace kiwi_fit_v2
 		{
             #region front-end
             InitializeComponent();
+
             userPageBackground.Source = ImageSource.FromResource("kiwi-fit_v2.userbg.png");
             userPageBackground.Aspect = Aspect.Fill;
             im6.Source = ImageSource.FromResource("kiwi-fit_v2.im6.png");

@@ -46,7 +46,7 @@ namespace kiwi_fit_v2
                     Picture = "kiwi-fit_v2.kiwi.png"},
                 new Food{Name = "Киви", Calories = "10", Fats="0", Carb="0", Proteins="0",
                     Picture = "kiwi-fit_v2.kiwi.png"},
-                new Food{Name = "Киви", Calories = "10", Fats="0", Carb="0", Proteins="0",
+                new Food{Name = "Яблоко", Calories = "10", Fats="0", Carb="0", Proteins="1",
                     Picture = "kiwi-fit_v2.kiwi.png"}
             };
         }
@@ -56,13 +56,9 @@ namespace kiwi_fit_v2
         {
             public string Name { get; set; }
             public string Calories { get; set; }
-
             public string Proteins { get; set; }
-
             public string Fats { get; set; }
-
             public string Carb { get; set; }
-
             public string Picture { get; set; }
         }
 

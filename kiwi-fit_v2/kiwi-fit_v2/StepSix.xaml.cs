@@ -28,6 +28,10 @@ namespace kiwi_fit_v2
             imt.Text = info.IMT.ToString();
             imtNormal.Text = info.TextIMT.ToString();
             countOfWater.Text = info.TextCountOfWater.ToString();
+            Calories.Text = info.Calories.ToString();
+            Proteins.Text = info.Proteins.ToString();
+            Fats.Text = info.Fats.ToString();
+            Carbo.Text = info.Carbo.ToString();
         }
         public StepSix ()
 		{

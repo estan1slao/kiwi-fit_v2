@@ -91,7 +91,8 @@
             <RelativeLayout Margin="45, 660, 0, 0">
                 <Button x:Name="sendDataButton" Text = "Продолжить" FontSize="25" FontFamily="Ubuntu-Bold" TextColor="#3F3F3F" 
                     CornerRadius="11" BackgroundColor="#68ED76" Clicked="GoSavePage"
-                    RelativeLayout.HeightConstraint = "70" RelativeLayout.WidthConstraint ="300"/>
+                    RelativeLayout.HeightConstraint = "70" RelativeLayout.WidthConstraint ="300"
+                        Clicked="InitializationUser"/>
             </RelativeLayout>
         </RelativeLayout>
     </Grid>

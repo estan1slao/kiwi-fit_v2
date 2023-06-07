@@ -79,3 +79,10 @@ C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\SaveChangeOne.xaml.g.cs
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\SavePageTwo.xaml.g.cs
 C:\Users\ksupo\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\FoodPage.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\ChangePageOne.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\ChangePageThree.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\ChangePageTwo.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\FoodPage.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\SaveChangeOne.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\SavePageTwo.xaml.g.cs
+C:\Users\vogade\Desktop\GitHub\kiwi-fit_v2\kiwi-fit_v2\kiwi-fit_v2\obj\Debug\netstandard2.0\StatisticPage.xaml.g.cs

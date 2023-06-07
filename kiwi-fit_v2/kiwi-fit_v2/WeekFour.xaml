@@ -24,7 +24,7 @@
                      RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="370"/>
                 </RelativeLayout>
                 <RelativeLayout Grid.Row="4" Margin="0, -63, 0, 0">
-                    <Button x:Name = "TaskFour" CornerRadius="40" BackgroundColor="#D9FFDC" Text="Потреблять сложные углеводы. Изменить подход к процессу приготовления пищи." 
+                    <Button x:Name = "TaskFour" CornerRadius="40" BackgroundColor="#D9FFDC" Text="Грамотно распределить белки, углеводы и жиры в течение дня." 
                      FontSize="15" FontFamily="Ubuntu" TextColor="#535353" Clicked="GoToTaskFourPage"
                      RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="370"/>
                 </RelativeLayout>

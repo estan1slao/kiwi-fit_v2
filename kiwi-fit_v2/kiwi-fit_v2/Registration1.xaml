@@ -29,26 +29,28 @@
                 <RadioButton x:Name="female"  Content="женский" Grid.Column="2" FontFamily="Ubuntu" TextColor="#707070"/>
             </Grid>
         </StackLayout>
-        <StackLayout Margin="20, 200, 0, 0" >
-            <Grid ColumnDefinitions="2" RowDefinitions="2">
-                <Label Grid.Row="1" Grid.Column="1" Text="Рост" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
-                <Grid Grid.Column="1" Grid.Row="2" Margin="0, -5, 0, 0">
-                    <RelativeLayout>
-                        <Frame BackgroundColor="#D9FFDC" CornerRadius="11" BorderColor="#707070"
-                         RelativeLayout.HeightConstraint = "35" RelativeLayout.WidthConstraint ="120"/>
-                        <Entry x:Name="userheight" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="120" Keyboard="Numeric"/>
-                    </RelativeLayout>
-                </Grid>
-                <Label Grid.Row="1" Grid.Column="2" Text="Вес" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
-                <Grid  Grid.Row="2" Grid.Column="2" Margin="0, -5, 0, 0">
-                    <RelativeLayout>
-                        <Frame BackgroundColor="#D9FFDC" CornerRadius="11" BorderColor="#707070" 
-                               RelativeLayout.HeightConstraint="35" RelativeLayout.WidthConstraint="120"/>
-                        <Entry x:Name="userweight" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="120" Keyboard="Numeric"/>
-                    </RelativeLayout>
-                </Grid>
-            </Grid>
-        </StackLayout>
+        <RelativeLayout Margin="20, 200, 0, 0" >
+            <Label Text="Рост" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
+            <RelativeLayout Margin="-1, 27, 0, 0">
+                <Frame BackgroundColor="#D9FFDC" CornerRadius="11" BorderColor="#707070"
+                         RelativeLayout.HeightConstraint = "35" RelativeLayout.WidthConstraint ="95"/>
+                <Entry x:Name="userheight" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="95" Keyboard="Numeric"/>
+            </RelativeLayout>
+
+            <Label Text="Возраст" TextColor="#707070" FontSize="20" FontFamily="Ubuntu" Margin="133, 25, 0, 0"/>
+            <RelativeLayout Margin="133, 55, 0, 0">
+                <Frame BackgroundColor="#D9FFDC" CornerRadius="11" BorderColor="#707070" 
+                               RelativeLayout.HeightConstraint="35" RelativeLayout.WidthConstraint="95"/>
+                <Entry x:Name="userage" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="95" Keyboard="Numeric"/>
+            </RelativeLayout>
+
+            <Label Text="Вес" TextColor="#707070" FontSize="20" FontFamily="Ubuntu" Margin="265, 0, 0, 0"/>
+            <RelativeLayout Margin="265, 27, 0, 0">
+                <Frame BackgroundColor="#D9FFDC" CornerRadius="11" BorderColor="#707070" 
+                               RelativeLayout.HeightConstraint="35" RelativeLayout.WidthConstraint="95"/>
+                <Entry x:Name="userweight" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="95" Keyboard="Numeric"/>
+            </RelativeLayout>
+        </RelativeLayout>
         <RelativeLayout Margin="0, 310, 0, 0">
             <Frame BackgroundColor="#8BF593" CornerRadius="24" RelativeLayout.HeightConstraint="300" RelativeLayout.WidthConstraint="400"/>
             <Label Text="Выберите вашу" TextColor="#707070" FontSize="20" FontFamily="Ubuntu" Margin="130, 8, 0, 0"/>

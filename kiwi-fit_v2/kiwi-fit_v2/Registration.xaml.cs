@@ -28,7 +28,7 @@ namespace kiwi_fit_v2
 
         public async void InitializationUser(object sender, System.EventArgs e)
         {
-            if (username.Text == null || userheight.Text == null || userweight.Text == null || (!male.IsChecked && !female.IsChecked))
+            if (username.Text == null || userheight.Text == null || userweight.Text == null || userage.Text == null || (!male.IsChecked && !female.IsChecked))
             {
                 await DisplayAlert("Ошибка", "Введите корректные данные", "Продолжить");
                 return;
@@ -36,8 +36,9 @@ namespace kiwi_fit_v2
             userInfo.Name = username.Text.Trim();
             userInfo.Weight = double.Parse(userweight.Text.Trim());
             userInfo.Height = double.Parse(userheight.Text.Trim());
+            userInfo.Age = double.Parse(userage.Text.Trim());
             userInfo.Gender = male.IsChecked ? 0 : female.IsChecked ? 1 : -1;
-            if (userInfo.Name.Length < 1 || userInfo.Height < 140 || userInfo.Weight < 36)
+            if (userInfo.Name.Length < 1 || userInfo.Height < 140 || userInfo.Weight < 36 || userInfo.Age < 0)
             {
                 await DisplayAlert("Ошибка", "Введите корректные данные", "Продолжить");
                 return;
@@ -184,6 +185,8 @@ namespace kiwi_fit_v2
                 userInfo.Gender = 1;
             else
                 userInfo.Gender = -1;
+            if (userage.Text != null)
+                userInfo.Age = double.Parse(userage.Text.Trim());
             var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "tempInfo.json");
             var json = JsonSerializer.Serialize(userInfo);
 
@@ -212,6 +215,8 @@ namespace kiwi_fit_v2
                     else
                         female.IsChecked = true;
                 }
+                if (userInfo.Age != 0)
+                    userage.Text = userInfo.Age.ToString();
             }
         }
     }

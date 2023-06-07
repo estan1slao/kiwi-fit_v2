@@ -908,23 +908,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ksupo\\.nuget\\packages\\": {},
+    "C:\\Users\\vogade\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ksupo\\GitHub\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2.csproj",
+      "projectUniqueName": "C:\\Users\\vogade\\Desktop\\GitHub\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2.csproj",
       "projectName": "kiwi-fit_v2",
-      "projectPath": "C:\\Users\\ksupo\\GitHub\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2.csproj",
-      "packagesPath": "C:\\Users\\ksupo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ksupo\\GitHub\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2\\obj\\",
+      "projectPath": "C:\\Users\\vogade\\Desktop\\GitHub\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2.csproj",
+      "packagesPath": "C:\\Users\\vogade\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vogade\\Desktop\\GitHub\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ksupo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vogade\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -982,7 +982,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

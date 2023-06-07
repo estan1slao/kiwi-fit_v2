@@ -1,14 +1,41 @@
-﻿using Xamarin.Forms;
+﻿using System.Text.Json;
+using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static User.User;
+using System.IO;
 
 namespace kiwi_fit_v2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WeekFour : ContentPage
     {
+        private void Initialization()
+        {
+            var pathInfo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "userInfo.json");
+            if (!File.Exists(pathInfo))
+                Navigation.PushModalAsync(new Registration());
+            var info = JsonSerializer.Deserialize<UserInformation>(File.ReadAllText(pathInfo));
+
+            var currentDate = info.Date + new TimeSpan(21, 0, 0, 0);
+            //if (!(currentDate.Date <= DateTime.Now.Date && (currentDate.Date + new TimeSpan(7, 0, 0, 0)) > DateTime.Now.Date))
+            //    Navigation.PushModalAsync(new WeekFour());
+
+            var firstDay = currentDate.Day.ToString();
+            var firstMonth = currentDate.Month.ToString();
+            var firstYear = currentDate.Year.ToString();
+
+            var secondDate = currentDate + new TimeSpan(7, 0, 0, 0);
+            var secondDay = secondDate.Day.ToString();
+            var secondMonth = secondDate.Month.ToString();
+            var secondYear = secondDate.Year.ToString();
+            week.Text = $"{firstDay}.{firstMonth}.{firstYear} - {secondDay}.{secondMonth}.{secondYear}";
+            stepNumber.Text = "Шаг 4";
+        }
         public WeekFour()
         {
             InitializeComponent();
+            Initialization();
             im6.Source = ImageSource.FromResource("kiwi-fit_v2.im6.png");
             im6.Aspect = Aspect.Fill;
 
