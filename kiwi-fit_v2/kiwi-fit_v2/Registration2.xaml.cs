@@ -58,7 +58,7 @@ namespace kiwi_fit_v2
             else
             {
                 gainWeightButton.BackgroundColor = Color.FromHex("#8EEF96");
-                loseWeightButton.BackgroundColor = Color.FromHex("#8EEF96");
+                loseWeightButton.BackgroundColor = Color.FromHex("#2B6130");
                 sendDataButton.BackgroundColor = Color.FromHex("#68ED76");
             }
         }

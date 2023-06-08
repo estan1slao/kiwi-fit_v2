@@ -69,17 +69,17 @@
                     <Button Grid.Row="1" Grid.Column="1" x:Name="everyDay" Text="Каждый день" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                         CornerRadius="15" BackgroundColor="#68ED76"
                         RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="100"
-                        />
+                        Clicked="EveryDayClicked"/>
                     <Button Grid.Row="1" Grid.RowSpan = "2" Grid.Column="2" x:Name="EveryDayAndJob" 
                         Text="Тренировки каждый день и работа, требуюшая физические нагрузки" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                         CornerRadius="15" BackgroundColor="#68ED76"
                         RelativeLayout.WidthConstraint ="120"
-                        />
+                        Clicked="EveryDayAndJobClicked"/>
                     <Button Grid.Row="2" Grid.Column="1" x:Name="TwoInDay" Text="2 тренировки в день" 
                         FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                         CornerRadius="15" BackgroundColor="#68ED76"
                         RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="100"
-                        />
+                        Clicked="TwoInDayClicked"/>
                 </Grid>
             </RelativeLayout>
             <RelativeLayout Margin="27, 613, 0, 0">

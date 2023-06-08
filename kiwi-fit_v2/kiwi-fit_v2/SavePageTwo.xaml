@@ -102,12 +102,14 @@
             <RelativeLayout Margin="76, 382, 0, 0">
                 <Button x:Name="saveChange" Text = "Да" FontSize="16" FontFamily="Ubuntu-Bold" TextColor="#707070" 
                     CornerRadius="18" BackgroundColor="#68ED76"
-                    RelativeLayout.HeightConstraint = "40" RelativeLayout.WidthConstraint ="101"/>
+                    RelativeLayout.HeightConstraint = "40" RelativeLayout.WidthConstraint ="101"
+                        Clicked="SaveChangeClicked"/>
             </RelativeLayout>
             <RelativeLayout Margin="220, 382, 0, 0">
                 <Button x:Name="notsaveChange" Text = "Нет" FontSize="16" FontFamily="Ubuntu-Bold" TextColor="#707070" 
                     CornerRadius="18" BackgroundColor="#ED6868"
-                    RelativeLayout.HeightConstraint = "40" RelativeLayout.WidthConstraint ="101"/>
+                    RelativeLayout.HeightConstraint = "40" RelativeLayout.WidthConstraint ="101"
+                        Clicked="NotSaveChangeClicked"/>
             </RelativeLayout>
         </RelativeLayout>
     </Grid>

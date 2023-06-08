@@ -66,19 +66,19 @@
                     <Button Grid.Row="1" Grid.Column="1" x:Name="absence" Text="Отсутствие" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                         CornerRadius="15" BackgroundColor="#68ED76"
                         RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="100"
-                       />
+                       Clicked="AbsenceClicked"/>
                     <Button Grid.Row="1" Grid.Column="2" x:Name="TwoTimeAWeek" Text="2-3 раза в неделю" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                         CornerRadius="15" BackgroundColor="#68ED76"
                         RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="120"
-                        />
+                        Clicked="TwoTimeAWeekClicked"/>
                     <Button Grid.Row="2" Grid.Column="1" x:Name="ThreeTimeAWeek" Text="3-4 раза в неделю" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                         CornerRadius="15" BackgroundColor="#68ED76"
                         RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="100"
-                        />
+                        Clicked="ThreeTimeAWeekClicked"/>
                     <Button Grid.Row="2" Grid.Column="2" x:Name="FiveTimeAWeek" Text="5 раз в неделю" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
                         CornerRadius="15" BackgroundColor="#68ED76"
                         RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="120"
-                        />
+                        Clicked="FiveTimeAWeekClicked"/>
                 </Grid>
                 <ImageButton x:Name="im14" RelativeLayout.HeightConstraint = "113" RelativeLayout.WidthConstraint ="17" BackgroundColor="#8BF593" 
                          RelativeLayout.XConstraint="330" RelativeLayout.YConstraint="110" Clicked="GoNextPage"/>
@@ -91,8 +91,7 @@
             <RelativeLayout Margin="45, 660, 0, 0">
                 <Button x:Name="sendDataButton" Text = "Продолжить" FontSize="25" FontFamily="Ubuntu-Bold" TextColor="#3F3F3F" 
                     CornerRadius="11" BackgroundColor="#68ED76" Clicked="GoSavePage"
-                    RelativeLayout.HeightConstraint = "70" RelativeLayout.WidthConstraint ="300"
-                        Clicked="InitializationUser"/>
+                    RelativeLayout.HeightConstraint = "70" RelativeLayout.WidthConstraint ="300"/>
             </RelativeLayout>
         </RelativeLayout>
     </Grid>

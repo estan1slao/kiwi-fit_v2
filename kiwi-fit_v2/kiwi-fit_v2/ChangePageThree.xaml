@@ -29,9 +29,11 @@
             </StackLayout>
             <RelativeLayout Margin="55, 200, 0, 0">
                 <Button x:Name="gainWeightButton" Text="Набрать вес" FontSize="16" FontFamily="Ubuntu" TextColor="#707070"
-                    CornerRadius="40" BackgroundColor="#68ED76" HeightRequest="78" WidthRequest="292" />
+                    CornerRadius="40" BackgroundColor="#68ED76" HeightRequest="78" WidthRequest="292"
+                        Clicked="GainWeightButtonClicked"/>
                 <Button x:Name="loseWeightButton" Text="Похудеть" FontSize="16" FontFamily="Ubuntu" TextColor="#707070"
-                    CornerRadius="40" BackgroundColor="#68ED76" HeightRequest="78" WidthRequest="292" Margin="0, 90, 0, 0"/>
+                    CornerRadius="40" BackgroundColor="#68ED76" HeightRequest="78" WidthRequest="292" Margin="0, 90, 0, 0"
+                        Clicked="LoseWeightButtonClicked"/>
             </RelativeLayout>
             <StackLayout Margin="20, 390, 0, 0" Padding="30">
                 <Label Text="Время для достижения результата" TextColor="#707070" FontSize="16" FontFamily="Ubuntu"/>

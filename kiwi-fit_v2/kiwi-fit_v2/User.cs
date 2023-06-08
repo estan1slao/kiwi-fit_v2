@@ -11,9 +11,41 @@ namespace User
             public double Weight { get; set; }
             public double Age { get; set; }
             public int Gender { get; set; }
-            public double IMT { get; set; }
-            public string TextIMT { get; set; }
-            public string TextCountOfWater { get; set; }
+            public double IMT 
+            { 
+                get 
+                {
+                    return Math.Round((Weight / (Height * Height)) * 10000, 1);
+                } 
+            }
+            public string TextIMT { 
+                get
+                {
+                    string imtText;
+                    if (IMT < 16)
+                        imtText = "Дефицит массы тела";
+                    else if (IMT < 18.5)
+                        imtText = "Минимальная масса тела";
+                    else if (IMT < 25)
+                        imtText = "Масса тела в норме";
+                    else if (IMT < 30)
+                        imtText = "Избыток веса";
+                    else if (IMT < 35)
+                        imtText = "Первая степень ожирения";
+                    else if (IMT < 40)
+                        imtText = "Вторая степень ожирения";
+                    else
+                        imtText = "Третья степень ожирения";
+                    return imtText;
+                }
+            }
+            public string TextCountOfWater 
+            { 
+                get 
+                {
+                    return $"{Math.Round(0.025 * Weight, 1)} - {Math.Round(0.03 * Weight, 1)} л.";
+                } 
+            }
             public DateTime Date { get; set; }
             public int Activity { get; set; }
             public bool IsLoseWeight { get; set; }

@@ -44,7 +44,6 @@ namespace kiwi_fit_v2
                 return;
             }
             var userIMT = Math.Round((userInfo.Weight / (userInfo.Height * userInfo.Height)) * 10000, 1);
-            userInfo.IMT = userIMT;
             string imtText;
             if (userIMT < 16)
                 imtText = "Дефицит массы тела";
@@ -60,8 +59,6 @@ namespace kiwi_fit_v2
                 imtText = "Вторая степень ожирения";
             else
                 imtText = "Третья степень ожирения";
-            userInfo.TextIMT = imtText;
-            userInfo.TextCountOfWater = $"{Math.Round(0.025 * userInfo.Weight, 1)} - {Math.Round(0.03 * userInfo.Weight, 1)} л.";
             userInfo.Date = DateTime.Now;
             if (activitySelected)
             {
