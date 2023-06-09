@@ -20,11 +20,11 @@
                 <DataTemplate>
                     <RelativeLayout>
                         <Frame CornerRadius="35" BackgroundColor="#D9FFDC" 
-                       RelativeLayout.HeightConstraint="150" RelativeLayout.WidthConstraint="367"/>
+                       RelativeLayout.HeightConstraint="130" RelativeLayout.WidthConstraint="367"/>
                         <Image Source="" Aspect="Fill"/>
                         <Label Text = "{Binding Name}" FontSize="20" FontFamily="Ubuntu" TextColor="#463737" 
-                               Margin="173, 15, 0, 0"/>
-                        <Grid ColumnDefinitions="4" RowDefinitions="2" Margin="173, 50, 0, 0">
+                               Margin="20, 10, 0, 0"/>
+                        <Grid ColumnDefinitions="4" RowDefinitions="2" Margin="70, 40, 0, 0" RelativeLayout.WidthConstraint="320">
                             <Label Grid.Row="1" Grid.Column="1" Text="K" FontSize="20" FontFamily="Ubuntu" TextColor="#463737" 
                                />
                             <Label Grid.Row="2" Grid.Column="1" Text="{Binding Calories}" FontSize="20" FontFamily="Ubuntu-Bold" TextColor="#463737" 
