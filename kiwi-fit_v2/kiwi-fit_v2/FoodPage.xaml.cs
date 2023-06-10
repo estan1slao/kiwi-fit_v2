@@ -135,7 +135,6 @@ namespace kiwi_fit_v2
             foods.Add(new Food { Name = "Треска", Calories = " 69", Fats = "4.4", Carb = "0", Proteins = "17.1" });
             foods.Add(new Food { Name = "Тунец", Calories = "139", Fats = "4.6", Carb = "0", Proteins = "24.4" });
             foods.Add(new Food { Name = "Форель", Calories = "119", Fats = "3.46", Carb = "0", Proteins = "20.48" });
-            foods.Add(new Food { Name = "Лещ", Calories = "105", Fats = "4.4", Carb = "0", Proteins = "17.1" });
             foods.Add(new Food { Name = "Шука", Calories = "84", Fats = "1.1", Carb = "0", Proteins = "18.4" });
             foods.Add(new Food { Name = "Язь", Calories = "117", Fats = "4.5", Carb = "0", Proteins = "19" });
             foods.Add(new Food { Name = "Яичный белок куриный", Calories = "48", Fats = "0.17", Carb = "1", Proteins = "11.1" });
@@ -153,7 +152,37 @@ namespace kiwi_fit_v2
             foods.Add(new Food { Name = "Ячневая крупа", Calories = "313", Fats = "1.3", Carb = "65.4", Proteins = "10" });
             foods.Add(new Food { Name = "Баранина", Calories = "209", Fats = "16.3", Carb = "0", Proteins = "15.6" });
             foods.Add(new Food { Name = "Говядина", Calories = "187", Fats = "12.4", Carb = "0", Proteins = "18.9" });
+            foods.Add(new Food { Name = "Козлятина", Calories = "109", Fats = "2.31", Carb = "0", Proteins = "20.6" });
+            foods.Add(new Food { Name = "Кролик", Calories = "114", Fats = "2.32", Carb = "0", Proteins = "21.79" });
+            foods.Add(new Food { Name = "Лось", Calories = "111", Fats = "1.45", Carb = "0", Proteins = "22.95" });
+            foods.Add(new Food { Name = "Олень", Calories = "120", Fats = "2.42", Carb = "0", Proteins = "22.96" });
             foods.Add(new Food { Name = "Свинина", Calories = "259", Fats = "21.6", Carb = "0", Proteins = "16" });
+            foods.Add(new Food { Name = "Йогурт", Calories = "57", Fats = "1.5", Carb = "5.9", Proteins = "4.1" });
+            foods.Add(new Food { Name = "Кефир", Calories = "41", Fats = "0.93", Carb = "4.48", Proteins = "3.27" });
+            foods.Add(new Food { Name = "Масло сливочное", Calories = "661", Fats = "72.5", Carb = "1.3", Proteins = "0.8" });
+            foods.Add(new Food { Name = "Молоко", Calories = "64", Fats = "3.6", Carb = "4.8", Proteins = "3.2" });
+            foods.Add(new Food { Name = "Ряженка", Calories = "62", Fats = "4.88", Carb = "4.9", Proteins = "3.21" });
+            foods.Add(new Food { Name = "Сметана", Calories = "136", Fats = "10.6", Carb = "7.1", Proteins = "3.5" });
+            foods.Add(new Food { Name = "Сыр", Calories = "364", Fats = "29.5", Carb = "0", Proteins = "23.2" });
+            foods.Add(new Food { Name = "Творог", Calories = "155.3", Fats = "9", Carb = "2", Proteins = "16.7" });
+            foods.Add(new Food { Name = "Белый гриб", Calories = "34", Fats = "1.7", Carb = "1.1", Proteins = "3.7" });
+            foods.Add(new Food { Name = "Груздь", Calories = "16", Fats = "0.8", Carb = "0.5", Proteins = "1.8" });
+            foods.Add(new Food { Name = "Лисички", Calories = "32", Fats = "0.53", Carb = "3.06", Proteins = "1.49" });
+            foods.Add(new Food { Name = "Маслята", Calories = "9", Fats = "0.7", Carb = "0.5", Proteins = "2.4" });
+            foods.Add(new Food { Name = "Опенок", Calories = "22", Fats = "1.2", Carb = "0.5", Proteins = "2.2" });
+            foods.Add(new Food { Name = "Подберезовик", Calories = "20", Fats = "0.9", Carb = "1.2", Proteins = "2.3" });
+            foods.Add(new Food { Name = "Подосиновик", Calories = "22", Fats = "0.5", Carb = "1.2", Proteins = "3.3" });
+            foods.Add(new Food { Name = "Рыжик", Calories = "22", Fats = "0.8", Carb = "0.5", Proteins = "1.9" });
+            foods.Add(new Food { Name = "Сморчок", Calories = "31", Fats = "0.57", Carb = "2.3", Proteins = "3.12" });
+            foods.Add(new Food { Name = "Сыроежки", Calories = "19", Fats = "0.7", Carb = "1.5", Proteins = "1.7" });
+            foods.Add(new Food { Name = "Шампиньоны", Calories = "27", Fats = "1", Carb = "0.1", Proteins = "4.3" });
+            foods.Add(new Food { Name = "Грецкий орех", Calories = "656", Fats = "60.08", Carb = "11.1", Proteins = "16.2" });
+            foods.Add(new Food { Name = "Кедровый орех", Calories = "673", Fats = "68.37", Carb = "9.38", Proteins = "13.69" });
+            foods.Add(new Food { Name = "Кешью", Calories = "600", Fats = "48.5", Carb = "22.5", Proteins = "18.5" });
+            foods.Add(new Food { Name = "Миндаль", Calories = "609", Fats = "53.7", Carb = "13", Proteins = "18.6" });
+            foods.Add(new Food { Name = "Фундук", Calories = "651", Fats = "61.5", Carb = "9.4", Proteins = "15" });
+            foods.Add(new Food { Name = "Хлеб белый", Calories = "266", Fats = "3.3", Carb = "46.7", Proteins = "8.9" });
+            foods.Add(new Food { Name = "Хлеб черный", Calories = "201", Fats = "1.4", Carb = "37.7", Proteins = "7.7" });
             #endregion
 
             // Привязка ItemSource, только в первый раз

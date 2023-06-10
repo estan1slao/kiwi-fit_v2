@@ -1,21 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "Qa7hgVYD01MNlnLHtBUdaIfaeAJ1XA1Bt9P+va0+SyblZ0M2oDBaRu3Agu2oVwEnfveSk29trJsrJyNtq0Wocg==",
+  "dgSpecHash": "zcFF0NZsb5LtpPoGT8hh+W3DATupB4qLyu9jpT6u9D8+YiIOYUu2G3ktzi3XQT5aCvXyoBhzMqRndb8bMG9kDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ksupo\\GitHub\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2.csproj",
+  "projectFilePath": "C:\\Users\\vogade\\Desktop\\GitHub\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2\\kiwi-fit_v2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ksupo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0-preview.3.23174.8\\microsoft.bcl.asyncinterfaces.8.0.0-preview.3.23174.8.nupkg.sha512",
-    "C:\\Users\\ksupo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\ksupo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\ksupo\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
-    "C:\\Users\\ksupo\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
-    "C:\\Users\\ksupo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\ksupo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\ksupo\\.nuget\\packages\\system.text.encodings.web\\8.0.0-preview.3.23174.8\\system.text.encodings.web.8.0.0-preview.3.23174.8.nupkg.sha512",
-    "C:\\Users\\ksupo\\.nuget\\packages\\system.text.json\\8.0.0-preview.3.23174.8\\system.text.json.8.0.0-preview.3.23174.8.nupkg.sha512",
-    "C:\\Users\\ksupo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\ksupo\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\ksupo\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\vogade\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0-preview.3.23174.8\\microsoft.bcl.asyncinterfaces.8.0.0-preview.3.23174.8.nupkg.sha512",
+    "C:\\Users\\vogade\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\vogade\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\vogade\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\vogade\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\vogade\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\vogade\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\vogade\\.nuget\\packages\\system.text.encodings.web\\8.0.0-preview.3.23174.8\\system.text.encodings.web.8.0.0-preview.3.23174.8.nupkg.sha512",
+    "C:\\Users\\vogade\\.nuget\\packages\\system.text.json\\8.0.0-preview.3.23174.8\\system.text.json.8.0.0-preview.3.23174.8.nupkg.sha512",
+    "C:\\Users\\vogade\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\vogade\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\vogade\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }
