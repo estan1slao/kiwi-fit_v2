@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.Registration2"
+             BackgroundColor="#D9FFDC">
+    <Grid>
+        <StackLayout Margin="30, 0, 0, 0">
+            <Label Text="Чего вы хотите?" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
+            <Line X1="1"
+                  Y1="0"
+                  X2="310"
+                  Y2="0"
+                  Stroke="#707070"/>
+        </StackLayout>
+        <RelativeLayout Margin="55, 100, 0, 0">
+            <Button x:Name="gainWeightButton" Text="Набрать вес" FontSize="16" FontFamily="Ubuntu" TextColor="#707070"
+                    CornerRadius="40" BackgroundColor="#8EEF96" HeightRequest="78" WidthRequest="292" Clicked="GainWeightButtonClicked"/>
+            <Button x:Name="loseWeightButton" Text="Похудеть" FontSize="16" FontFamily="Ubuntu" TextColor="#707070" Clicked="LoseWeightButtonClicked"
+                    CornerRadius="40" BackgroundColor="#8EEF96" HeightRequest="78" WidthRequest="292" Margin="0, 90, 0, 0"/>
+        </RelativeLayout>
+        <StackLayout Margin="5, 310, 0, 0" Padding="30">
+            <Label Text="Время для достижения результата" TextColor="#707070" FontSize="16" FontFamily="Ubuntu"/>
+            <Grid ColumnDefinitions="2" RadioButtonGroup.GroupName="chooseTime" Margin="0, 10, 0, 0">
+                <RadioButton x:Name="fast" Content="быстро" Grid.Column="1" FontFamily="Ubuntu" 
+                             TextColor="#707070" FontSize="16"/>
+                <RadioButton x:Name="slowly"  Content="медленно" Grid.Column="2" FontFamily="Ubuntu" 
+                             TextColor="#707070" FontSize="16"/>
+            </Grid>
+        </StackLayout>
+
+        <RelativeLayout Margin="55, 594, 0, 0">
+            <Button x:Name="sendDataButton" Text = "Продолжить" FontSize="25" FontFamily="Ubuntu-Bold" TextColor="#3F3F3F" 
+                    CornerRadius="11" BackgroundColor="#A1A1A1" Clicked="EndRegistration"
+                    RelativeLayout.HeightConstraint = "82" RelativeLayout.WidthConstraint ="282"/>
+        </RelativeLayout>
+    </Grid>
+</ContentPage>

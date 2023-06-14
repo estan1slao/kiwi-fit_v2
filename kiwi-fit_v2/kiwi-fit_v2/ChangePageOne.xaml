@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.ChangePageOne">
+    <Grid>
+        <Image x:Name="userPageBackground" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        <Label x:Name ="username" Text="Ростислав" TextColor="#535353" FontSize="36" Padding="14, 49, 0, 0" FontFamily="Ubuntu-Regular"/>
+        <RelativeLayout Margin="0, 709, 0, 0" HorizontalOptions="Center">
+            <Frame CornerRadius="35" BackgroundColor="#D9FFDC" 
+                       RelativeLayout.HeightConstraint="67" RelativeLayout.WidthConstraint="234"/>
+            <ImageButton x:Name="im6" HeightRequest="32" WidthRequest="33" BackgroundColor="#D9FFDC"
+                             RelativeLayout.XConstraint="35" RelativeLayout.YConstraint="16"/>
+            <ImageButton x:Name="im7" HeightRequest="50" WidthRequest="60" BackgroundColor="#D9FFDC"
+                            RelativeLayout.XConstraint="85" RelativeLayout.YConstraint="6"/>
+            <ImageButton x:Name="im8" HeightRequest="35" WidthRequest="35" BackgroundColor="#D9FFDC" 
+                         RelativeLayout.XConstraint="165" RelativeLayout.YConstraint="13"/>
+        </RelativeLayout>
+        <BoxView BackgroundColor="#1B1B1B" Opacity="0.7"/>
+        <RelativeLayout>
+            <Frame CornerRadius="24" BackgroundColor="#D9FFDC" RelativeLayout.XConstraint="22" RelativeLayout.YConstraint="100"
+                       RelativeLayout.HeightConstraint="660" RelativeLayout.WidthConstraint="350"/>
+            <StackLayout Margin="45, 120, 0, 0">
+                <Label Text="Имя" TextColor="#707070" FontSize="16" FontFamily="Ubuntu"/>
+                <Grid Margin="0.5, -5, 0, 0">
+                    <RelativeLayout>
+                        <Frame BackgroundColor="#D9FFDC" CornerRadius="11" BorderColor="#707070" HeightRequest="23"
+                           RelativeLayout.HeightConstraint="35" RelativeLayout.WidthConstraint="300"/>
+                        <Entry x:Name="newusername" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="300" FontSize="20"/>
+                    </RelativeLayout>
+                </Grid>
+            </StackLayout>
+            <StackLayout Margin="30, 170, 0, 0" Padding="20">
+                <Label Text="Пол" TextColor="#707070" FontSize="16" FontFamily="Ubuntu"/>
+                <Grid  Margin ="0, -10, 0, 0" ColumnDefinitions="2" RadioButtonGroup.GroupName="chooseGender">
+                    <RadioButton x:Name="male" Content="мужской" Grid.Column="1" FontFamily="Ubuntu" TextColor="#707070"/>
+                    <RadioButton x:Name="female"  Content="женский" Grid.Column="2" FontFamily="Ubuntu" TextColor="#707070"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout Margin="40, 235, 0, 0" >
+                <Grid ColumnDefinitions="2" RowDefinitions="2">
+                    <Label Grid.Row="1" Grid.Column="1" Text="Рост" TextColor="#707070" FontSize="16" FontFamily="Ubuntu"/>
+                    <Grid Grid.Column="1" Grid.Row="2" Margin="0, -12, 0, 0">
+                        <RelativeLayout>
+                            <Frame BackgroundColor="#D9FFDC" CornerRadius="11" BorderColor="#707070"
+                         RelativeLayout.HeightConstraint = "35" RelativeLayout.WidthConstraint ="120"/>
+                            <Entry x:Name="userheight" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="120" Keyboard="Numeric"/>
+                        </RelativeLayout>
+                    </Grid>
+                    <Label Grid.Row="1" Grid.Column="2" Text="Вес" TextColor="#707070" FontSize="16" FontFamily="Ubuntu"/>
+                    <Grid  Grid.Row="2" Grid.Column="2" Margin="0, -12, 0, 0">
+                        <RelativeLayout>
+                            <Frame BackgroundColor="#D9FFDC" CornerRadius="11" BorderColor="#707070" 
+                               RelativeLayout.HeightConstraint="35" RelativeLayout.WidthConstraint="120"/>
+                            <Entry x:Name="userweight" RelativeLayout.HeightConstraint="40" RelativeLayout.WidthConstraint="120" Keyboard="Numeric"/>
+                        </RelativeLayout>
+                    </Grid>
+                </Grid>
+            </StackLayout>
+            <RelativeLayout Margin="22, 310, 0, 0">
+                <Frame BackgroundColor="#8BF593" CornerRadius="24" RelativeLayout.HeightConstraint="290" 
+                       RelativeLayout.WidthConstraint="350"/>
+                <Label Text="Выберите вашу" TextColor="#707070" FontSize="20" FontFamily="Ubuntu" Margin="110, 8, 0, 0"/>
+                <Label Text="физическую нагрузку" TextColor="#707070" FontSize="20" FontFamily="Ubuntu" Margin="85, 25, 0, 0"/>
+                <Grid ColumnDefinitions="2" RowDefinitions="2" Margin="0, 60, 0, 0" 
+                  RelativeLayout.HeightConstraint="270" RelativeLayout.WidthConstraint ="320">
+                    <Button Grid.Row="1" Grid.Column="1" x:Name="absence" Text="Отсутствие" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
+                        CornerRadius="15" BackgroundColor="#68ED76"
+                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="100"
+                       Clicked="AbsenceClicked"/>
+                    <Button Grid.Row="1" Grid.Column="2" x:Name="TwoTimeAWeek" Text="2-3 раза в неделю" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
+                        CornerRadius="15" BackgroundColor="#68ED76"
+                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="120"
+                        Clicked="TwoTimeAWeekClicked"/>
+                    <Button Grid.Row="2" Grid.Column="1" x:Name="ThreeTimeAWeek" Text="3-4 раза в неделю" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
+                        CornerRadius="15" BackgroundColor="#68ED76"
+                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="100"
+                        Clicked="ThreeTimeAWeekClicked"/>
+                    <Button Grid.Row="2" Grid.Column="2" x:Name="FiveTimeAWeek" Text="5 раз в неделю" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
+                        CornerRadius="15" BackgroundColor="#68ED76"
+                        RelativeLayout.HeightConstraint = "72" RelativeLayout.WidthConstraint ="120"
+                        Clicked="FiveTimeAWeekClicked"/>
+                </Grid>
+                <ImageButton x:Name="im14" RelativeLayout.HeightConstraint = "113" RelativeLayout.WidthConstraint ="17" BackgroundColor="#8BF593" 
+                         RelativeLayout.XConstraint="330" RelativeLayout.YConstraint="110" Clicked="GoNextPage"/>
+            </RelativeLayout>
+            <RelativeLayout Margin="27, 613, 0, 0">
+                <Button x:Name="adjustPlans" Text = "Корректировка планов" FontSize="16" FontFamily="Ubuntu" TextColor="#3F3F3F" 
+                    CornerRadius="37" BackgroundColor="#68ED76" Clicked="GoGhangePage"
+                    RelativeLayout.HeightConstraint = "38" RelativeLayout.WidthConstraint ="340"/>
+            </RelativeLayout>
+            <RelativeLayout Margin="45, 660, 0, 0">
+                <Button x:Name="sendDataButton" Text = "Продолжить" FontSize="25" FontFamily="Ubuntu-Bold" TextColor="#3F3F3F" 
+                    CornerRadius="11" BackgroundColor="#68ED76" Clicked="GoSavePage"
+                    RelativeLayout.HeightConstraint = "70" RelativeLayout.WidthConstraint ="300"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </Grid>
+</ContentPage>

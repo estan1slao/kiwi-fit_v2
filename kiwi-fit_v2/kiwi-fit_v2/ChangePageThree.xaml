@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.ChangePageThree">
+    <Grid>
+        <Image x:Name="userPageBackground" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        <Label x:Name ="username" Text="Ростислав" TextColor="#535353" FontSize="36" Padding="14, 49, 0, 0" FontFamily="Ubuntu-Regular"/>
+        <RelativeLayout Margin="0, 709, 0, 0" HorizontalOptions="Center">
+            <Frame CornerRadius="35" BackgroundColor="#D9FFDC" 
+                       RelativeLayout.HeightConstraint="67" RelativeLayout.WidthConstraint="234"/>
+            <ImageButton x:Name="im6" HeightRequest="32" WidthRequest="33" BackgroundColor="#D9FFDC"
+                             RelativeLayout.XConstraint="35" RelativeLayout.YConstraint="16"/>
+            <ImageButton x:Name="im7" HeightRequest="50" WidthRequest="60" BackgroundColor="#D9FFDC"
+                            RelativeLayout.XConstraint="85" RelativeLayout.YConstraint="6"/>
+            <ImageButton x:Name="im8" HeightRequest="35" WidthRequest="35" BackgroundColor="#D9FFDC" 
+                         RelativeLayout.XConstraint="165" RelativeLayout.YConstraint="13"/>
+        </RelativeLayout>
+        <BoxView BackgroundColor="#1B1B1B" Opacity="0.7"/>
+        <RelativeLayout>
+            <Frame CornerRadius="24" BackgroundColor="#D9FFDC" RelativeLayout.XConstraint="22" RelativeLayout.YConstraint="100"
+                       RelativeLayout.HeightConstraint="660" RelativeLayout.WidthConstraint="350"/>
+            <StackLayout Margin="33, 108, 0, 0">
+                <Label Text="Чего вы хотите?" TextColor="#707070" FontSize="20" FontFamily="Ubuntu"/>
+                <Line X1="1"
+                  Y1="0"
+                  X2="310"
+                  Y2="0"
+                  Stroke="#707070"/>
+            </StackLayout>
+            <RelativeLayout Margin="55, 200, 0, 0">
+                <Button x:Name="gainWeightButton" Text="Набрать вес" FontSize="16" FontFamily="Ubuntu" TextColor="#707070"
+                    CornerRadius="40" BackgroundColor="#68ED76" HeightRequest="78" WidthRequest="292"
+                        Clicked="GainWeightButtonClicked"/>
+                <Button x:Name="loseWeightButton" Text="Похудеть" FontSize="16" FontFamily="Ubuntu" TextColor="#707070"
+                    CornerRadius="40" BackgroundColor="#68ED76" HeightRequest="78" WidthRequest="292" Margin="0, 90, 0, 0"
+                        Clicked="LoseWeightButtonClicked"/>
+            </RelativeLayout>
+            <StackLayout Margin="20, 390, 0, 0" Padding="30">
+                <Label Text="Время для достижения результата" TextColor="#707070" FontSize="16" FontFamily="Ubuntu"/>
+                <Grid ColumnDefinitions="2" RadioButtonGroup.GroupName="chooseTime" Margin="0, 10, 0, 0">
+                    <RadioButton x:Name="fast" Content="быстро" Grid.Column="1" FontFamily="Ubuntu" 
+                             TextColor="#707070" FontSize="16"/>
+                    <RadioButton x:Name="slowly"  Content="медленно" Grid.Column="2" FontFamily="Ubuntu" 
+                             TextColor="#707070" FontSize="16"/>
+                </Grid>
+            </StackLayout>
+
+            <RelativeLayout Margin="60, 610, 0, 0">
+                <Button x:Name="sendDataButton" Text = "Продолжить" FontSize="25" FontFamily="Ubuntu-Bold" TextColor="#3F3F3F" 
+                    CornerRadius="11" BackgroundColor="#68ED76" Clicked="GoSavePage"
+                    RelativeLayout.HeightConstraint = "82" RelativeLayout.WidthConstraint ="282"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </Grid>
+</ContentPage>

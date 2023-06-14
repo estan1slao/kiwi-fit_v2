@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.TaskThree">
+    <ScrollView Orientation="Horizontal">
+        <Grid>
+            <Grid ColumnDefinitions="8" Margin="0, 100, 0, 0">
+                <RelativeLayout Grid.Column="1">
+                    <Image x:Name="im17" Margin="-15, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Многие худеющие отказываются от углеводов, потому что они якобы откладываются в жир. Однако углеводы – это незаменимый компонент нашего рациона. Именно углеводы дают нам энергию и положительно влияют на наше настроение. Также углеводы дают сигнал нашему организму о насыщении. Поэтому ни в коем случае нельзя исключать углеводы из рациона или сильно уменьшать их количество." 
+                     Margin="30, 60, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="65, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="95, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="125, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="155, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="185, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="215, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="245, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="275, 550, 0, 0"/>
+                    <Button x:Name = "Return"  CornerRadius="40" BackgroundColor="#1B1B1B" Opacity="0.5"
+                            Text="нажмите, чтобы вернуться" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="600"
+                     FontSize="16" FontFamily="Ubuntu" TextColor="#FFFFFF" Clicked = "GoToStepPage"
+                     RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="350"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="2">
+                    <Image x:Name="im16" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Что нужно минимизировать в нашем питании, так это простые углеводы. Простые углеводы быстро расщепляются в организме, приводят к повышению уровня сахара в крови, который потом резко падает и вызывает чувство голода. Вы снова едите, а неизрасходованные простые углеводы превращаются в жир. Со сложными углеводами совсем другая ситуация. Из-за своей структуры они дольше расщепляются организмом, не вызывают скачков инсулина и обеспечивают чувство сытости на длительный срок." 
+                           Margin="30, 80, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="65, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="95, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="125, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="155, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="185, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="215, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="245, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="275, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="3">
+                    <Image x:Name="im18" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+
+                    <Label Text="Сложные углеводы(углеводы с низким гликемическим индексом) должны составлять основу вашего меню. Это зерновые крупы, нешлифованный рис, макароны твердых сортов пшеницы, цельнозерновой или ржаной хлеб, овощи, корнеплоды, бобовые, фрукты" 
+                     Margin="30, 120, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="65, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="92, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="125, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="155, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="185, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="215, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="245, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="275, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="4">
+                    <Image x:Name="im19" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label 
+                        Text = "Простые углеводы(углеводы с высоким гликемическим индексом) должны в вашем меню минимизироваться. Промышленные сладости и белая выпечка, которые в первую очередь относят к «вредным» простым углеводом, мы исключили еще на первом шаге. Но также нужно минимизировать такие продукты как, например, мед, сухофрукты, белый рис, макароны из не твердых сортов пшеницы, некоторые виды сладких фруктов." 
+                        Margin="30,80, 0, 0"
+                        FontSize="20" FontFamily="Ubuntu" TextColor="#000000" RelativeLayout.WidthConstraint="317"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="65, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="95, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="125, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="155, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="185, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="215, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="245, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="275, 550, 0, 0"/>
+                </RelativeLayout>
+                <RelativeLayout Grid.Column="5">
+                    <Image x:Name="im20" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Исключить из меню жареные на масле продукты. О вреде жареной пищи наверняка слышал каждый. Во-первых, жареные на масле продукты повышают холестерин и провоцируют развитие сердечно-сосудистых заболеваний. Во-вторых, жареная пища более калорийная и жирная, поэтому является причиной лишнего веса и диабета." 
+                           Margin="30, 120, 0, 0" FontSize="20" FontFamily="Ubuntu" TextColor="#000000" RelativeLayout.WidthConstraint="317"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="65, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="95, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="125, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="155, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="185, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="215, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="245, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="275, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="6">
+                    <Image x:Name="im7" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Поэтому продукты лучше не жарить, а варить, тушить или запекать в духовке. Если первое время вареная еда вам будет казаться безвкусной и пресной, то можно использовать больше натуральных специй и приправ. Кроме того, запеченные в духовке продукты ничуть не уступают по вкусу жареной еде. Жарить без масла на антипригарной сковородке (например, яичницу) – можно." 
+                     Margin="30, 110, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="65, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="95, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="125, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="155, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="185, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="215, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="245, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="275, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="7">
+                    <Image x:Name="im8" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Уменьшить термическую обработку растительных продуктов.В процессе приготовления растительной пищи разрушается клетчатка продукта, а именно она является нашим хорошим помощником в процессе похудения. В чем польза клетчатки? Она понижает уровень глюкозы в крови, надолго насыщает и помогает в переработке пищи. Например, сырая морковь – это сложный углевод и хороший источник клетчатки, а вареная морковь – это быстрый углевод, который поднимает уровень сахара в крови и вызывает чувство голода." 
+                     Margin="30, 60, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="65, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="95, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="125, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="155, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="185, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="215, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="245, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="275, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="8">
+                    <Image x:Name="im9" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Поэтому по возможности лучше отдать предпочтение свежему растительному продукту без термической обработки. Но если без варки не обойтись (например, в случае каш, некоторых овощей и замороженных продуктов), то хотя бы не переваривайте их и не доводите до состояния «пюре», чтобы сохранить клетчатку." 
+                     Margin="30, 130, 0, 0" WidthRequest="325"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="65, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="95, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="125, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="155, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="185, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="215, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="245, 560, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="275, 560, 0, 0"/>
+                </RelativeLayout>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

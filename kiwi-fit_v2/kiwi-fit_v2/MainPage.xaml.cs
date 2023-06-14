@@ -7,7 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-[assembly: ExportFont("Ubuntu-Bold.ttf", Alias = "Ubuntu")]
+[assembly: ExportFont("Ubuntu-Light.ttf", Alias = "Ubuntu")]
+[assembly: ExportFont("Ubuntu-Bold.ttf", Alias = "Ubuntu-Bold")]
+[assembly: ExportFont("Ubuntu-Regular.ttf", Alias = "Ubuntu-Regular")]
 namespace kiwi_fit_v2
 {  
     public partial class MainPage : ContentPage
@@ -20,6 +22,9 @@ namespace kiwi_fit_v2
                 Navigation.PushModalAsync(new UserPage());
                 return;
             }
+            path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "tempInfo.json");
+            if(File.Exists(path))
+                File.Delete(path);
             InitializeComponent();
             loadingPicture.Source = ImageSource.FromResource("kiwi-fit_v2.startpicture.png");
             loadingPicture.Aspect = Aspect.Fill;

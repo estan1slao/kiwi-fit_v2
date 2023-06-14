@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kiwi_fit_v2.TaskTwo">
+    <ScrollView Orientation="Horizontal">
+        <Grid>
+            <Grid ColumnDefinitions="9" Margin="0, 100, 0, 0">
+                <RelativeLayout Grid.Column="1">
+                    <Image x:Name="im17" Margin="-15, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Этот шаг будет одним из самых сложных, но и самых важных одновременно. На этом этапе многие спотыкаются, и либо бросают идею ПП, либо скатываются в жесткие диеты. Именно поэтому на первом этапе перехода на правильное питание лучше наладить хотя бы режим питания в целом. Тонкости распределения белков, углеводов и жиров будут рассмотрены на следующих этапах." 
+                     Margin="30, 60, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="50, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="80, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="110, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="140, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="200, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="230, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="260, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="290, 550, 0, 0"/>
+                    <Button x:Name = "Return"  CornerRadius="40" BackgroundColor="#1B1B1B" Opacity="0.5"
+                            Text="нажмите, чтобы вернуться" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="600"
+                     FontSize="16" FontFamily="Ubuntu" TextColor="#FFFFFF" Clicked = "GoToStepPage"
+                     RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="350"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="2">
+                    <Image x:Name="im16" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Примерный режим питания будет выглядеть так:" Margin="30, 80, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 160, 0, 0"/>
+                    <Label Text="полноценный завтрак (7:00)" Margin="50, 150, 0, 0"
+                    WidthRequest="317" FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 195, 0, 0"/>
+                    <Label Text="перекус №1 (10:00)" Margin="50, 185, 0, 0"
+                     WidthRequest="317" FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 230, 0, 0"/>
+                    <Label Text="обед (13:00)" Margin="50, 220, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 265, 0, 0"/>
+                    <Label Text="перекус №2 (16:00)" Margin="50, 255, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 300, 0, 0"/>
+                    <Label Text="ужин (19:00)" Margin="50, 290, 0, 0"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill = "#000000" WidthRequest="8" HeightRequest="8" Margin="33, 335, 0, 0"/>
+                    <Label Text="легкий перекус за 1 час до сна: кефир, творог (21:00)" Margin="50, 325, 0, 0"
+                     WidthRequest="317" FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Label Text="Время указано условно, с учетом подъема в 6:00 и отправление ко сну в 22:00. Если вы встаете позже или раньше, то скорректируйте время под свое расписание." 
+                           Margin="30, 390, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="50, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="80, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="110, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="140, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="200, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="230, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="260, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="290, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="3">
+                    <Image x:Name="im18" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+
+                    <Label Text="Главный базис правильного питания: питаться каждые 3 часа небольшими порциями (200-250 г). Это значит, что вы не делаете больших перерывов между едой. Вы не забываете про завтрак (завтрак должен быть в течение часа после пробуждения). Вы не морите себя голодом между приемами пищи, а делаете питательные перекусы." 
+                     Margin="30, 100, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="50, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="80, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="110, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="140, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="200, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="230, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="260, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="290, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="4">
+                    <Image x:Name="im19" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label 
+                        Text = "Вы забываете про правило «не есть после 18:00», и всегда ужинаете. Пропуски завтраков, скудные обеды и отмены ужинов замедляют обмен веществ и с вероятностью 99% приведут вас к пищевому срыву. При этом ваш завтрак, обед и ужин должны быть полноценными приемами пищи, а не «кофе с печенькой» или «кефир с яблочком». " 
+                        Margin="30,100, 0, 0"
+                        FontSize="20" FontFamily="Ubuntu" TextColor="#000000" RelativeLayout.WidthConstraint="317"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="50, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="80, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="110, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="140, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="200, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="230, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="260, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="290, 550, 0, 0"/>
+                </RelativeLayout>
+                <RelativeLayout Grid.Column="5">
+                    <Image x:Name="im20" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Такое питание увеличивает обмен веществ и ускоряет процесс похудения, а также обеспечивает организм необходимой энергией и питательными веществами. Вы перестанете быть постоянно голодными и прекратить жить с ощущением, что вы на диете." 
+                           Margin="30, 120, 0, 0" FontSize="20" FontFamily="Ubuntu" TextColor="#000000" RelativeLayout.WidthConstraint="317"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="50, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="80, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="110, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="140, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="200, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="230, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="260, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="290, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="6">
+                    <Image x:Name="im7" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Если вы хотите не просто похудеть, а сохранить полученный результат и поддерживать его в течение жизни, то вам нужно запомнить еще один важнейший принцип правильного питания. Правильное питание должно стать частью вашей жизни, а не краткосрочным этапом для похудения. Настройтесь менять пищевые привычки навсегда. Ваш организм отблагодарит вас не только стройным телом, но и крепким здоровьем" 
+                     Margin="30, 60, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="50, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="80, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="110, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="140, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="200, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="230, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="260, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="290, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="7">
+                    <Image x:Name="im8" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Многие рассуждают таким образом: «Вот я сейчас посижу на правильном питании, избавлюсь от лишнего веса, а потом спокойно буду есть все, что захочу». Но это ошибочное мнение. Вес не может быть статичным, он изменяется в зависимости от вашего питания. Если вы будете балансировать между правильным питанием и беспорядочным питанием, то вы получите качели веса. Килограммы будут уходить, а потом снова набираться при возвращении к прежнему питанию." 
+                     Margin="30, 60, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="50, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="80, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="110, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="140, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="200, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="230, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="260, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="290, 550, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="8">
+                    <Image x:Name="im9" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Аналогичная ситуация и с диетами, только тут будет все гораздо хуже. Обычно диета предполагает низкую калорийность, поэтому выдержать ее больше трех-четырех недель очень сложно. За этот срок вы, может быть, и потеряете 3-5 кг, но большая часть из этого потерянного объема – это не жир, а вода, которая уходит при уменьшении употребления углеводов, сладостей и соленостей. При этом организм адаптируется к низкокалорийной диете, замедляет метаболизм, и после возвращения к привычному питанию усиленно копит жир. В итоге после диеты вы набираете вес еще больше, чем потеряли до этого." 
+                     Margin="30, 20, 0, 0" WidthRequest="325"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="50, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="80, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="110, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="140, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="170, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="200, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="230, 560, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="260, 560, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="290, 560, 0, 0"/>
+                </RelativeLayout>
+
+                <RelativeLayout Grid.Column="9">
+                    <Image x:Name="im15" Margin="-12, -100, 0, 0" RelativeLayout.HeightConstraint="800" RelativeLayout.WidthConstraint="400"/>
+                    <Frame  BackgroundColor="#D9FFDC" CornerRadius="40" RelativeLayout.XConstraint="10"  RelativeLayout.YConstraint="0"
+                            RelativeLayout.HeightConstraint="600" RelativeLayout.WidthConstraint="350"/>
+                    <Label Text="Универсальный совет для худеющих: даже если какая-то быстрая диета вам кажется эффективной и даже если она уже срабатывала не раз, отложите ее прямо сейчас. Рано или поздно вы все равно придете к правильному питанию, но к тому времени уже получите проблемы со здоровьем, убитый обмен веществ и разочарование от бесконечных качелей потери и набора веса. Начните менять образ жизни и пищевое поведение, а не садитесь на диету. на следующих этапах." 
+                     Margin="30, 60, 0, 0" WidthRequest="317"
+                     FontSize="20" FontFamily="Ubuntu" TextColor="#000000"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="50, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="80, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="110, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="140, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="170, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="200, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="230, 550, 0, 0"/>
+                    <Ellipse Fill="#68ED76" WidthRequest="25" HeightRequest="9" Margin="260, 550, 0, 0"/>
+                    <Ellipse Fill="#2B6130" WidthRequest="25" HeightRequest="9" Margin="290, 550, 0, 0"/>
+                </RelativeLayout>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

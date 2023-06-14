@@ -4,41 +4,36 @@ using System.Text.Json;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static User.User;
 
 namespace kiwi_fit_v2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserPage : ContentPage
     {
-        private void Initialization(UserInformation info)
+        private void Initialization()
         {
+            var pathInfo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "userInfo.json");
+            if (!File.Exists(pathInfo))
+                Navigation.PushModalAsync(new Registration());
+            var info = JsonSerializer.Deserialize<UserInformation>(File.ReadAllText(pathInfo));
             username.Text = info.Name;
             height.Text = info.Height.ToString();
             weight.Text = info.Weight.ToString();
-            var userIMT = Math.Round((info.Weight / (info.Height * info.Height)) * 10000, 1);
-            imt.Text = userIMT.ToString();
-            if (userIMT < 16)
-                imtNormal.Text = "Дефицит массы тела";
-            else if (userIMT < 18.5)
-                imtNormal.Text = "Минимальная масса тела";
-            else if (userIMT < 25)
-                imtNormal.Text = "Масса тела в норме";
-            else if (userIMT < 30)
-                imtNormal.Text = "Избыток веса";
-            else if (userIMT < 35)
-                imtNormal.Text = "Первая степень ожирения";
-            else if (userIMT < 40)
-                imtNormal.Text = "Вторая степень ожирения";
-            else
-                imtNormal.Text = "Третья степень ожирения";
-            countOfWater.Text = $"{Math.Round(0.025 * info.Weight, 1)} - {Math.Round(0.03 * info.Weight, 1)} л.";
+            imt.Text = info.IMT.ToString();
+            imtNormal.Text = info.TextIMT.ToString();
+            countOfWater.Text = info.TextCountOfWater.ToString();
+            Calories.Text = info.Calories.ToString();
+            Proteins.Text = info.Proteins.ToString();
+            Fats.Text = info.Fats.ToString();
+            Carbo.Text = info.Carbo.ToString();
         }
 
         public UserPage()
         {
             #region front-end
             InitializeComponent();
-            userPageBackground.Source = ImageSource.FromResource("kiwi -fit_v2.userbg.png");
+            userPageBackground.Source = ImageSource.FromResource("kiwi-fit_v2.userbg.png");
             userPageBackground.Aspect = Aspect.Fill;
 
             im1.Source = ImageSource.FromResource("kiwi-fit_v2.im1.png");
@@ -46,6 +41,9 @@ namespace kiwi_fit_v2
 
             im2.Source = ImageSource.FromResource("kiwi-fit_v2.im2.png");
             im2.Aspect = Aspect.Fill;
+
+            im3.Source = ImageSource.FromResource("kiwi-fit_v2.im3.png");
+            im3.Aspect = Aspect.Fill;
 
             im4.Source = ImageSource.FromResource("kiwi-fit_v2.im4.png");
             im4.Aspect = Aspect.Fill;
@@ -64,13 +62,28 @@ namespace kiwi_fit_v2
             #endregion
 
             #region back-end
-            var pathInfo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "userInfo.json");
-            if (!File.Exists(pathInfo))
-                Navigation.PushModalAsync(new Registration());
-            var jsonInfo = JsonSerializer.Deserialize<UserInformation>(File.ReadAllText(pathInfo));
-            Initialization(jsonInfo);
-
+            Initialization();
             #endregion
+        }
+
+        private async void GoToStepPage(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new WeekOne());
+        }
+
+        private async void GoToStatisticPage(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new StatisticPage());
+        }
+
+        private async void GoToChangePage(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ChangePageOne());
+        }
+
+        private async void GoToFoodPage(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new FoodPage());
         }
     }
 }
