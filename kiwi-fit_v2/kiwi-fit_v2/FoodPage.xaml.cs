@@ -208,9 +208,9 @@ namespace kiwi_fit_v2
             public string Carb { get; set; }
         }
 
-        private async void GoToChangePage(object sender, System.EventArgs e)
+        private async void GoToWeekOnePage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new ChangePageOne(), false);
+            await Navigation.PushModalAsync(new WeekOne(), false);
         }
 
         private async void GoToUserPage(object sender, System.EventArgs e)

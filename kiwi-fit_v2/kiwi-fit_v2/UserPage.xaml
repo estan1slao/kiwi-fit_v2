@@ -96,7 +96,7 @@
             <RelativeLayout Grid.Column="2">
                 <Frame Grid.Row="2" CornerRadius="17" BackgroundColor="#D9FFDC"
                        RelativeLayout.HeightConstraint="142" RelativeLayout.WidthConstraint="129"/>
-                <Label Text="посмотреть статистику" FontSize="20" Padding="10, 10, 0, 0" FontFamily="Ubuntu"/>
+                <Label Text="посмотреть статистику" FontSize="20" Padding="10, 10, 0, 0" FontFamily="Ubuntu" TextColor="#535353"/>
                 <ImageButton x:Name="im5" HeightRequest="68" WidthRequest="77" BackgroundColor="#D9FFDC"
                              RelativeLayout.XConstraint="25" RelativeLayout.YConstraint="71" Clicked="GoToStatisticPage"/>
             </RelativeLayout>

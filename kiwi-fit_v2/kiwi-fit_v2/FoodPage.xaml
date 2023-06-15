@@ -53,7 +53,7 @@
             <Frame CornerRadius="35" BackgroundColor="#D9FFDC" BorderColor="#000000"
                        RelativeLayout.HeightConstraint="67" RelativeLayout.WidthConstraint="234"/>
             <ImageButton x:Name="im6" HeightRequest="32" WidthRequest="33" BackgroundColor="#D9FFDC"
-                             RelativeLayout.XConstraint="35" RelativeLayout.YConstraint="16" Clicked="GoToChangePage"/>
+                             RelativeLayout.XConstraint="35" RelativeLayout.YConstraint="16" Clicked="GoToWeekOnePage"/>
             <ImageButton x:Name="im7" HeightRequest="50" WidthRequest="60" BackgroundColor="#D9FFDC"
                             RelativeLayout.XConstraint="85" RelativeLayout.YConstraint="6" Clicked="GoToUserPage"/>
             <ImageButton x:Name="im8" HeightRequest="35" WidthRequest="35" BackgroundColor="#D9FFDC" 

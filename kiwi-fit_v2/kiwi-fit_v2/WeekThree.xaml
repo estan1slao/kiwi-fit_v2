@@ -52,7 +52,7 @@
                 <ImageButton x:Name="im7" HeightRequest="50" WidthRequest="60" BackgroundColor="#D9FFDC"
                             RelativeLayout.XConstraint="85" RelativeLayout.YConstraint="6" Clicked="GoToUserPage"/>
                 <ImageButton x:Name="im8" HeightRequest="35" WidthRequest="35" BackgroundColor="#D9FFDC" 
-                         RelativeLayout.XConstraint="165" RelativeLayout.YConstraint="13"/>
+                         RelativeLayout.XConstraint="165" RelativeLayout.YConstraint="13" Clicked="GoToFoodPage"/>
                 <Path Data="M0 1H13H26" Stroke="#2B6130" Margin="36, 52, 0, 0"/>
             </RelativeLayout>
         </Grid>
