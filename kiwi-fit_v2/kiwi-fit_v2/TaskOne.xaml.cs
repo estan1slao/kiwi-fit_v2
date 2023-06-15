@@ -34,7 +34,7 @@ namespace kiwi_fit_v2
 
         private async void GoToStepPage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new WeekOne());
+            await Navigation.PushModalAsync(new WeekOne(), false);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace kiwi_fit_v2
 
         private async void OnButtonClicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new UserPage());
+            await Navigation.PushModalAsync(new UserPage(), false);
         }
     }
 }

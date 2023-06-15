@@ -66,22 +66,22 @@ namespace kiwi_fit_v2
 
         private async void GoToUserPage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new UserPage());
+            await Navigation.PushModalAsync(new UserPage(), false);
         }
 
         private async void GoToTaskOnePage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new TaskOne());
+            await Navigation.PushModalAsync(new TaskOne(), false);
         }
 
         private async void GoToTaskTwoPage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new TaskTwo());
+            await Navigation.PushModalAsync(new TaskTwo(), false);
         }
 
         private async void GoToTaskThreePage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new TaskThree());
+            await Navigation.PushModalAsync(new TaskThree(), false);
         }
     }
 }

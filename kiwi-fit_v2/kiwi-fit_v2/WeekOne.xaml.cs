@@ -72,12 +72,12 @@ namespace kiwi_fit_v2
 
         private async void GoToUserPage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new UserPage());
+            await Navigation.PushModalAsync(new UserPage(), false);
         }
 
         private async void GoToTaskOnePage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new TaskOne());
+            await Navigation.PushModalAsync(new TaskOne(), false);
         }
     }
 }

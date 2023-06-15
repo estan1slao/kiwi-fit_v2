@@ -68,22 +68,22 @@ namespace kiwi_fit_v2
 
         private async void GoToStepPage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new WeekOne());
+            await Navigation.PushModalAsync(new WeekOne(), false);
         }
 
         private async void GoToStatisticPage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new StatisticPage());
+            await Navigation.PushModalAsync(new StatisticPage(), false);
         }
 
         private async void GoToChangePage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new ChangePageOne());
+            await Navigation.PushModalAsync(new ChangePageOne(), false);
         }
 
         private async void GoToFoodPage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new FoodPage());
+            await Navigation.PushModalAsync(new FoodPage(), false);
         }
     }
 }

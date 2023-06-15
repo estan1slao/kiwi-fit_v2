@@ -148,12 +148,12 @@ namespace kiwi_fit_v2
             if (File.Exists(path))
                 File.Delete(path);
             File.WriteAllText(path, json);
-            await Navigation.PushModalAsync(new ChangePageOne());
+            await Navigation.PushModalAsync(new ChangePageOne(), false);
         }
 
         private async void GoGhangePage(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new ChangePageThree());
+            await Navigation.PushModalAsync(new ChangePageThree(), false);
         }
         private async void GoSavePage(object sender, System.EventArgs e)
         {
@@ -175,7 +175,7 @@ namespace kiwi_fit_v2
             if (File.Exists(path))
                 File.Delete(path);
             File.WriteAllText(path, json);
-            await Navigation.PushModalAsync(new SavePageTwo());
+            await Navigation.PushModalAsync(new SavePageTwo(), false);
         }
     }
 

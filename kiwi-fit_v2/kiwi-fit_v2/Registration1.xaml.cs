@@ -180,7 +180,7 @@ namespace kiwi_fit_v2
                 if (File.Exists(path))
                     File.Delete(path);
                 File.WriteAllText(path, json);
-                await Navigation.PushModalAsync(new Registration2());
+                await Navigation.PushModalAsync(new Registration2(), false);
             }
             else
                 await DisplayAlert("Ошибка", "Введите корректные данные", "Продолжить");

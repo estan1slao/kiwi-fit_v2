@@ -78,14 +78,14 @@ namespace kiwi_fit_v2
             var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "newTempInfo.json");
             File.Delete(path);
 
-            await Navigation.PushModalAsync(new UserPage());
+            await Navigation.PushModalAsync(new UserPage(), false);
         }
 
         private async void NotSaveChangeClicked(object sender, System.EventArgs e)
         {
             var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "newTempInfo.json");
             File.Delete(path);
-            await Navigation.PushModalAsync(new UserPage());
+            await Navigation.PushModalAsync(new UserPage(), false);
         }
     }
 }

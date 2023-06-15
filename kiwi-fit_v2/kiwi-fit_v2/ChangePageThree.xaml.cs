@@ -95,7 +95,7 @@ namespace kiwi_fit_v2
                 File.Delete(path);
             File.WriteAllText(path, json);
 
-            await Navigation.PushModalAsync(new SaveChangeOne());
+            await Navigation.PushModalAsync(new SaveChangeOne(), false);
         }
     }
 }

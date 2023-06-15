@@ -34,7 +34,7 @@ namespace kiwi_fit_v2
         #endregion
         private async void OnButtonClicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new Registration());
+            await Navigation.PushModalAsync(new Registration(), false);
         }
     }
 }
