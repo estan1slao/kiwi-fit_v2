@@ -17,7 +17,7 @@
                 <RelativeLayout Grid.Row="2" Margin="0, -23, 0, 0">
                     <Button x:Name = "TaskTwo" CornerRadius="40" BackgroundColor="#D9FFDC" Text="Наладить режим питания. Настроиться на смену образа жизни." 
                      FontSize="16" FontFamily="Ubuntu" TextColor="#535353" Clicked="GoToTaskTwoPage"
-                     RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="370"/>
+                     RelativeLayout.HeightConstraint="75" RelativeLayout.WidthConstraint="340"/>
                     <CheckBox Color="#D9FFDC" Margin="345, 25, 0, 0"/>
                 </RelativeLayout>
                 <RelativeLayout Grid.Row="3" Margin="0, -43, 0, 0">
